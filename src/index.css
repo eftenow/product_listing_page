@@ -7,7 +7,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+  color: rgba(60, 60, 60, 0.626);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btns {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 6px;
+  background-color: transparent;
+  border: none;
+  border: 0.6px solid #ccc;
+  border-radius: 5px;
+  color: #302f2f32;
 }

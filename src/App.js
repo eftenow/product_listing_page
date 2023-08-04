@@ -1,7 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import Navigation from './Containers/Navigation/Navigation';
-import Products from './Components/Products/Products';
+import Navigation from "./Containers/Navigation/Navigation";
+import Products from "./Containers/Products/Products";
+import Recommended from "./Containers/Recommended/Recommended";
 
 function App() {
   return (
