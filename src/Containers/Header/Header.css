@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #1c1c1c;
-    height: 70px;
+    height: 84px;
     padding: 0 20px;
     color: #ffffff;
     position: sticky;
@@ -19,44 +19,9 @@
     margin-right: 20px;
     border-radius: 6px;
     position: relative;
-    width: 16rem;
+    width: 19rem;
 }
 
-.sub-nav {
-    background-color: #9d9a9af5; 
-    background-color: #40454a;
-    text-align: center;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    overflow: visible;
-}
-
-.sub-nav *{
-    font-size: 1em;
-    color: #fff;
-    line-height: 30px;
-    letter-spacing: .05em;
-}
-
-.sub-nav ul {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-item {
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.nav-item:hover {
-    background-color: #555; /* adjust as necessary */
-}
-
-.search {
-    /* Style your search bar here */
-}
 
 .icons {
     display: flex;

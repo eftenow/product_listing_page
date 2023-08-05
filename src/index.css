@@ -24,13 +24,9 @@ li {
   list-style: none;
 }
 
-.btns {
-  cursor: pointer;
-  padding: 10px 20px;
-  margin-right: 6px;
-  background-color: transparent;
-  border: none;
-  border: 0.6px solid #ccc;
-  border-radius: 5px;
-  color: #302f2f32;
+
+a:hover,
+li:hover{
+  scale: 1.01;
+  font-weight: bold;
 }

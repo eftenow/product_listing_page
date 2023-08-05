@@ -1,0 +1,30 @@
+.sidebar-title {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+
+}
+
+
+.sidebar {
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: width 300ms;
+    margin-top: 84px;
+    border-right: 1px solid #40454a78;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    margin-bottom: 4rem;
+
+}
+
+.logo-container h1 {
+    margin: 1.3rem;
+}

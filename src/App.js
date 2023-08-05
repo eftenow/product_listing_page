@@ -1,16 +1,13 @@
-import Navigation from "./Containers/Navigation/Navigation";
-import Products from "./Containers/Products/Products";
-import Recommended from "./Containers/Recommended/Recommended";
+import Header from "./Containers/Header/Header";
+import CataloguePageLayout from "./Containers/PageLayout/CataloguePageLayout";
+
 
 function App() {
   return (
-    <>
-    <Navigation />
-    <Products />
-    <Recommended />
-    
-    </>
-  )
+   <>
+    <Header />
+    <CataloguePageLayout /></>
+  );
 }
 
 export default App;

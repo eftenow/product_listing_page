@@ -1,0 +1,35 @@
+.sub-nav {
+    background-color: #40454a;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: visible;
+    margin-left: auto;
+    z-index: 1;
+    width: calc(100vw - 300px);
+}
+
+.sub-nav ul * {
+    margin-right: 10px;
+}
+
+.sub-nav *{
+    font-size: 1em;
+    color: #fff;
+    line-height: 30px;
+    letter-spacing: .055em;
+}
+
+.sub-nav ul {
+    display: flex;
+}
+
+.nav-item {
+    padding: 14px 26px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #555; /* adjust as necessary */
+}
