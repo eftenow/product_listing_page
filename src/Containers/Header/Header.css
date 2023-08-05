@@ -11,6 +11,18 @@
     z-index: 10;
 }
 
+.logo{
+    height: 70px;
+    width: 70px;
+    margin-left: 5rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+
 .search{
     padding: 12px 20px;
     border: none;

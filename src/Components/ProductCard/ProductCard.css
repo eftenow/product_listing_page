@@ -8,7 +8,7 @@
     padding: 4px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 202px;
     transition: 0.3s;
 }
 
@@ -17,9 +17,9 @@
 }
 
 .product-card img {
-    width: 100%; 
-    height: auto;
-    margin-bottom: 10px;
+    max-height: 240px; 
+    max-width: 200px; 
+    object-fit: cover; 
 }
 
 .card-details {
@@ -45,16 +45,16 @@
 .price span {
     font-size: 18px;
     font-weight: 600;
-    color: #333;
+    color: #494949;
     text-decoration: none;
 }
 
 .purchase-item-icon {
-    color: #333;
+    color: #494949;
     font-size: 27px;
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 8px;
     right: 10px;
     border-radius: 50px;
     padding: 3px;
@@ -66,6 +66,21 @@
     background-color: rgb(193, 193, 193);
     
 }
+
+.card-reviews {
+    margin-top: 0.2rem;
+    margin-bottom: 0.9rem;
+    display: flex;
+  }
+  
+  .rating-star {
+    color: #eba71f;
+  }
+  
+  .total-reviews {
+    font-size: 0.9rem;
+    margin-left: 6px;
+  }
 
 .discount{
     position: absolute;

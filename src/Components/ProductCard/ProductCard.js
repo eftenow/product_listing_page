@@ -1,5 +1,6 @@
-import React from 'react'
-import { BiShoppingBag } from 'react-icons/bi'
+import React from 'react';
+import { BiShoppingBag } from 'react-icons/bi';
+import { AiTwotoneStar } from 'react-icons/ai';
 import './ProductCard.css';
 
 
@@ -10,9 +11,13 @@ const ProductCard = () => {
             <div className='card-details'>
                 <p className="brand-name">Nike</p>
                 <p className='card-title'>Nike Air Force 1</p>
-                <p className='card-price'>
+                <section className="card-reviews">
+                            <AiTwotoneStar className='rating-star' />
+                            <span className="total-reviews">5</span>
+                        </section>
+                <section className='card-price'>
                     <div className='price'>
-                    <span className='discounted-price'>$100</span> <del>$120</del> 
+                        <span className='discounted-price'>$100</span> <del>$120</del>
                     </div>
                     <div className='purchase-item'>
                         <BiShoppingBag className='purchase-item-icon' />
@@ -20,7 +25,7 @@ const ProductCard = () => {
                     <div className="discount">
                         <span>-10%</span>
                     </div>
-                </p>
+                </section>
             </div>
         </article>
     )
