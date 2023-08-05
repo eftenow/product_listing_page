@@ -8,31 +8,31 @@ const Category = () => {
 
       <div>
         <label className="sidebar-label-container">
-          <input type="radio" value="" name="test" />
+          <input type="radio" value="" name="category" />
           <span className="checkmark"></span>All
         </label>
         <Input
           value="sneakers"
           title="Sneakers"
-          name="test"
+          name="category"
         />
-        
+
         <Input
           value="flats"
           title="Flats"
-          name="test"
+          name="category"
         />
 
         <Input
           value="sandals"
           title="Sandals"
-          name="test"
+          name="category"
         />
 
         <Input
           value="heels"
           title="Heels"
-          name="test"
+          name="category"
         />
       </div>
     </div>

@@ -7,20 +7,7 @@
     display: flex;
 }
 
-.products-navigation-container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* to occupy remaining width after sidebar */
-}
 
-.sidebar {
-    width: 300px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    transition: width 300ms;
-    margin-top: 4%;
-}
+
 
 

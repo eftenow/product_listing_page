@@ -20,11 +20,13 @@
     flex-direction: column;
 }
 
-.logo-container {
-    margin-bottom: 4rem;
-
+.filters-title-container {
+    border-bottom: 2px solid black;
+    margin: 1rem;
+    padding: 5px 10px;
 }
 
-.logo-container h1 {
-    margin: 1.3rem;
+.filters-title-container h1 {
+    margin: 1rem;
+    font-size: 24px;
 }
