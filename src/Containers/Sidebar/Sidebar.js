@@ -8,7 +8,7 @@ const Sidebar = () => {
         <>
             <section className="sidebar">
                 <div className="logo-container">
-                    <h1>another logo?</h1>
+                    <h1>Filter</h1>
                 </div>
 
                 <Category />
