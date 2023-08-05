@@ -5,7 +5,6 @@
 
 }
 
-
 .sidebar {
     width: 300px;
     position: fixed;
@@ -22,11 +21,11 @@
 
 .filters-title-container {
     border-bottom: 2px solid black;
-    margin: 1rem;
+    margin: 1rem auto 2.6rem auto;
     padding: 5px 10px;
+    padding: 1.25rem 1.7rem;
 }
 
 .filters-title-container h1 {
-    margin: 1rem;
     font-size: 24px;
 }
