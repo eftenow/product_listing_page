@@ -7,38 +7,6 @@
 }
 
 
-.product-card {
-    margin: 20px;
-    border: 2px solid #ededed;
-    padding: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.product-card img {
-    max-height: 230px; 
-    max-width: 190px; 
-    object-fit: cover; 
-}
-
-.product-image{
-    width: 13rem;
-    margin-bottom: 1rem;
-
-}
-
-.card-title {
-    margin-bottom: 1rem;
-
-}
-
-.card-price{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
 .bag-icon {
     color: #535353;
 }
