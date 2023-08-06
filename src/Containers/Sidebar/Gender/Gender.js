@@ -3,10 +3,10 @@ import './Gender.css'
 
 const Gender = ({ filterValues, handleFilterChange }) => {
   return (
-   <div>
+   <div className='gender-filter-container'>
      <h2 className="sidebar-title">Gender</h2>
 
-     <div>
+     <div className='filter-items-wrapper'>
        <Input
          value="men"
          title="Men"

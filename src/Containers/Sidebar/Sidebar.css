@@ -7,7 +7,7 @@
     transition: width 300ms;
     margin-top: 84px;
     border-right: 1px solid #40454a78;
-    align-items: center;
+    align-items: start;
     display: flex;
     flex-direction: column;
 }

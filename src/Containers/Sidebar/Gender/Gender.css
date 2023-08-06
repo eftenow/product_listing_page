@@ -8,6 +8,16 @@
   margin-top: 20px;
 }
 
+.gender-filter-container,
+.colors-filter-container,
+.price-filter-container{
+  margin-left: 2rem;
+}
+
+.filter-items-wrapper{
+  margin-left: 1rem;
+}
+
 .sidebar-label-container {
   display: block;
   position: relative;
