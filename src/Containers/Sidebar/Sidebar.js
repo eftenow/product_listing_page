@@ -2,29 +2,21 @@ import Gender from './Gender/Gender';
 import Colors from './Colors/Colors';
 import Price from './Price/Price';
 import './Sidebar.css'
-
+import { useState } from 'react';
 
 
 const Sidebar = () => {
-    const [filterValues, setFilterValues] = React.useState({
-        gender: [],
-        price: [],
-        colors: [],
+    const [filterValues, setFilterValues] = useState({
+        gender: "",
+        price: "",
+        colors: "",
     });
 
     const handleFilterChange = (filterName, value) => {
         setFilterValues(prevState => {
-            const updatedFilter = prevState[filterName];
-            const valueIndex = updatedFilter.indexOf(value);
-            if (valueIndex !== -1) {
-                updatedFilter.splice(valueIndex, 1);
-            } else {
-                updatedFilter.push(value);
-            }
-            return { ...prevState, [filterName]: updatedFilter };
+            return { ...prevState, [filterName]: value };
         });
     };
-
 
     return (
         <>
@@ -41,6 +33,7 @@ const Sidebar = () => {
         </>
     )
 }
+
 
 
 export default Sidebar;

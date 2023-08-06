@@ -2,37 +2,37 @@ import Input from '../../../Components/Input/Input';
 import './Gender.css'
 
 const Gender = ({ filterValues, handleFilterChange }) => {
-  return(
+  return (
    <div>
-   <h2 className="sidebar-title">Gender</h2>
+     <h2 className="sidebar-title">Gender</h2>
 
-   <div>
-     <Input
-       value="men"
-       title="Men"
-       name="gender"
-       checked={filterValues.includes('men')}
-       onChange={() => handleFilterChange('gender', 'men')}
-     />
+     <div>
+       <Input
+         value="men"
+         title="Men"
+         name="gender"
+         filterValues={filterValues}
+         onChange={handleFilterChange}
+       />
 
-     <Input
-       value="women"
-       title="Women"
-       name="gender"
-       checked={filterValues.includes('women')}
-       onChange={() => handleFilterChange('gender', 'women')}
-     />
+       <Input
+         value="women"
+         title="Women"
+         name="gender"
+         filterValues={filterValues}
+         onChange={handleFilterChange}
+       />
 
-     <Input
-       value="all"
-       title="All"
-       name="gender"
-       checked={filterValues.includes('all')}
-       onChange={() => handleFilterChange('gender', 'all')}
-     />
+       <Input
+         value="all"
+         title="All"
+         name="gender"
+         filterValues={filterValues}
+         onChange={handleFilterChange}
+       />
 
+     </div>
    </div>
- </div>
   )
 }
 

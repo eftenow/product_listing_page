@@ -1,10 +1,19 @@
-const Input = ({ value, title, name, checked, onChange }) => {
+const Input = ({ title, value, name, onChange, filterValues, color }) => {
     return (
         <label className="sidebar-label-container">
-            <input type="checkbox" checked={checked} onChange={onChange} value={value} name={name} />
-            <span className="checkmark">{title}</span>
+            <input
+                type="checkbox"
+                name={name}
+                value={value}
+                onChange={() => onChange(name, value)}
+                checked={filterValues === value}
+            />
+            <span className="checkmark" style={{ backgroundColor: color }}></span>
+            {title}
         </label>
-    )
-}
+    );
+};
+
+
 
 export default Input;
