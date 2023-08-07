@@ -42,12 +42,129 @@ const data = [
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
+    brand: "Nike",
+    color: "black",
+    category: "sneakers",
+    audience: "men",
+    use: "sport"
+  },
+  {
+    img: "https://m.media-amazon.com/images/I/71wd22BMF8L._AC_UY1000_.jpg",
+    title: "Adidas Running Shoe",
+    rating: 3.2,
+    prevPrice: 110,
+    newPrice: 40,
     brand: "Adidas",
     color: "black",
     category: "sneakers",
     audience: "men",
     use: "sport"
   },
+
+  {
+    img: "https://m.media-amazon.com/images/I/31kuxVSdsRL._AC_UY1000_.jpg",
+    title: "Adidas Scrape 2",
+    rating: 5.0,
+    prevPrice: 320,
+    newPrice: null,
+    brand: "Adidas",
+    color: "green",
+    category: "sneakers",
+    audience: "men",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/51DyD9KAmCL._AC_UY1000_.jpg",
+    title: "Adidas Sazm",
+    rating: 2.9,
+    prevPrice: 130,
+    newPrice: 70,
+    brand: "Adidas",
+    color: "blue",
+    category: "sneakers",
+    audience: "men",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71qv-cBRMtL._AC_UY1000_.jpg",
+    title: "Adidas Urdin 2",
+    rating: 3.9,
+    prevPrice: 110,
+    newPrice: 70,
+    brand: "Adidas",
+    color: "blue",
+    category: "sneakers",
+    audience: "men",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71qv-cBRMtL._AC_UY1000_.jpg",
+    title: "Adidas Kaptir",
+    rating: 3.9,
+    prevPrice: 150,
+    newPrice: 75,
+    brand: "Adidas",
+    color: "blue",
+    category: "sneakers",
+    audience: "women",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71qv-cBRMtL._AC_UY1000_.jpg",
+    title: "Adidas Lite Race",
+    rating: 3.6,
+    prevPrice: 70,
+    newPrice: 60,
+    brand: "Adidas",
+    color: "blue",
+    category: "sneakers",
+    audience: "women",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71wd22BMF8L._AC_UY1000_.jpg",
+    title: "Adidas Pumplepus",
+    rating: 4.5,
+    prevPrice: 140,
+    newPrice: 90,
+    brand: "Adidas",
+    color: "white",
+    category: "sneakers",
+    audience: "women",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61iPwlHClhL._AC_UY1000_.jpg",
+    title: "Adidas Stan Smith",
+    rating: 4.9,
+    prevPrice: 200,
+    newPrice: 180,
+    brand: "Adidas",
+    color: "white",
+    category: "sneakers",
+    audience: "women",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/81ZcNgtzMNL._AC_UY1000_.jpg",
+    title: "Adidas Cloudfoam Peb",
+    rating: 4.9,
+    prevPrice: 260,
+    newPrice: null,
+    brand: "Adidas",
+    color: "green",
+    category: "sneakers",
+    audience: "women",
+    use: "sport"
+  },
+
   {
     img: "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
     title: "Flat Slip On Pumps",
@@ -233,41 +350,30 @@ const data = [
     audience: "men",
     use: "sport"
   },
-  {
-    img: "https://m.media-amazon.com/images/I/61bncQ44yML._AC_UX695_.jpg",
-    title: "Chunky High Heel",
-    rating: 4.5,
-    prevPrice: 180,
-    newPrice: 110,
-    brand: "Vans",
-    color: "black",
-    category: "heels",
-    audience: "men",
-    use: "sport"
-  },
+ 
   {
     img: "https://m.media-amazon.com/images/I/71czu7WgGuL._AC_UY695_.jpg",
-    title: "Slip On Stiletto High Heel",
+    title: "Gucci Stiletto",
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
-    brand: "Puma",
+    brand: "Gucci",
     color: "black",
     category: "heels",
-    audience: "men",
-    use: "sport"
+    audience: "formal",
+    use: "formal"
   },
   {
     img: "https://m.media-amazon.com/images/I/61men05KRxL._AC_UY625_.jpg",
-    title: "DREAM PAIRS Court Shoes",
+    title: "Prada DREAM Pairs",
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
-    brand: "Nike",
+    brand: "Prada",
     color: "red",
     category: "heels",
-    audience: "men",
-    use: "sport"
+    audience: "women",
+    use: "formal"
   },
   {
     img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
@@ -284,52 +390,172 @@ const data = [
 
   {
     img: "https://m.media-amazon.com/images/I/51PGWTXgf-L._AC_UY625_.jpg",
-    title: "Low Mid Block Heels",
+    title: "Gucci Low Heels",
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
-    brand: "Nike",
+    brand: "Gucci",
     color: "black",
     category: "heels",
-    audience: "men",
-    use: "sport"
+    audience: "women",
+    use: "formal"
   },
-  {
-    img: "https://m.media-amazon.com/images/I/616sA5XUKtL._AC_UY675_.jpg",
-    title: "Chunky High Heel",
-    rating: 4.5,
-    prevPrice: 180,
-    newPrice: 110,
-    brand: "Adidas",
-    color: "black",
-    category: "heels",
-    audience: "men",
-    use: "sport"
-  },
+
   {
     img: "https://m.media-amazon.com/images/I/71h5+MbEK7L._AC_UY625_.jpg",
-    title: "Amore Fashion Stilettos",
-    rating: 4.5,
-    prevPrice: 180,
+    title: "Gucci Amore",
+    rating: 2.5,
+    prevPrice: 120,
     newPrice: 110,
-    brand: "Adidas",
+    brand: "Gucci",
     color: "white",
     category: "heels",
-    audience: "men",
-    use: "sport"
+    audience: "women",
+    use: "formal"
   },
   {
     img: "https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg",
-    title: "Bridal Sandals Glitter",
+    title: "Prada Glitter",
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
-    brand: "Adidas",
+    brand: "Prada",
     color: "black",
     category: "heels",
-    audience: "men",
-    use: "sport"
+    audience: "women",
+    use: "formal"
   },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71NgbhGEtNL._AC_SL1500_.jpg",
+    title: "Ted Baker Julieta's",
+    rating: 4.5,
+    prevPrice: 220,
+    newPrice: 160,
+    brand: "Ted Baker",
+    color: "red",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71iu4K-xvgL._AC_UY1000_.jpg",
+    title: "Ted Baker Savei",
+    rating: 3.3,
+    prevPrice: 250,
+    newPrice: 190,
+    brand: "Ted Baker",
+    color: "white",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61x7W+j3OFL._AC_UY1000_.jpg",
+    title: "Ted Baker Battye",
+    rating: 2.8,
+    prevPrice: 175,
+    newPrice: null,
+    brand: "Ted Baker",
+    color: "black",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71I4yW+o+6L._AC_SL1500_.jpg",
+    title: "Ted Baker Ryanah",
+    rating: 3.1,
+    prevPrice: 130,
+    newPrice: null,
+    brand: "Ted Baker",
+    color: "blue",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61y5O3SWkAL._AC_UY1000_.jpg",
+    title: "Ted Baker Malikaa",
+    rating: 2.7,
+    prevPrice: 90,
+    newPrice: null,
+    brand: "Ted Baker",
+    color: "blue",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/S/shoppable-media-external-prod-iad-us-east-1/f7accb8f-7c27-4441-8917-cd7c97fd54e4/c645b-ca51-41bd-b45b-0c55bb0ae._SX828_Q60_.jpeg",
+    title: "Ted Baker Malikaa",
+    rating: 3.7,
+    prevPrice: 80,
+    newPrice: null,
+    brand: "Ted Baker",
+    color: "green",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61iKEeiJaeL._AC_UY1000_.jpg",
+    title: "Gucci Suede",
+    rating: 3.8,
+    prevPrice: 440,
+    newPrice: null,
+    brand: "Gucci",
+    color: "red",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61w9Dwsq1CL._AC_UY1000_.jpg",
+    title: "Prada Dimalo Es",
+    rating: 3.6,
+    prevPrice: 390,
+    newPrice: null,
+    brand: "Prada",
+    color: "blue",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/51QhZpvCJfL._AC_UY1000_.jpg",
+    title: "Prada Red Leather",
+    rating: 4.2,
+    prevPrice: 390,
+    newPrice: null,
+    brand: "Prada",
+    color: "red",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61HvHTWjmfL._AC_UY1000_.jpg",
+    title: "Prada Black Leather",
+    rating: 4.2,
+    prevPrice: 390,
+    newPrice: null,
+    brand: "Prada",
+    color: "black",
+    category: "heels",
+    audience: "women",
+    use: "formal"
+  },
+
   {
     img: "https://m.media-amazon.com/images/I/71yhoZP0l6L._AC_UY695_.jpg",
     title: "Wedding Prom Bridal",
