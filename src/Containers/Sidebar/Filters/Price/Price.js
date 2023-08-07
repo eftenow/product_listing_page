@@ -1,5 +1,5 @@
-import Input from '../../../Components/Input/Input';
-import './Price.css'
+import Input from '../../../../Components/Input/Input';
+import '../Filters.css';
 
 
 const Price = ({ filterValues, handleFilterChange }) => {

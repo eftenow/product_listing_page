@@ -1,5 +1,5 @@
-import Input from '../../../Components/Input/Input';
-import './Gender.css'
+import Input from '../../../../Components/Input/Input';
+import '../Filters.css';
 
 const Gender = ({ filterValues, handleFilterChange }) => {
   return (

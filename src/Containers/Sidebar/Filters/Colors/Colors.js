@@ -1,5 +1,5 @@
-import './Colors.css'
-import Input from '../../../Components/Input/Input';
+import Input from '../../../../Components/Input/Input';
+import '../Filters.css';
 
 const Colors = ({ filterValues, handleFilterChange }) => {
   return (

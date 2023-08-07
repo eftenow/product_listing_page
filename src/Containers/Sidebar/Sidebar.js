@@ -1,6 +1,8 @@
-import Gender from './Gender/Gender';
-import Colors from './Colors/Colors';
-import Price from './Price/Price';
+import Brand from './Filters/Brand/Brand';
+import Colors from './Filters/Colors/Colors';
+import Gender from './Filters/Gender/Gender';
+import {} from './Filters/Gender/Gender'
+import Price from './Filters/Price/Price';
 import './Sidebar.css'
 import { useState } from 'react';
 
@@ -10,7 +12,10 @@ const Sidebar = () => {
         gender: "",
         price: "",
         colors: "",
-    });
+        brand: "",
+        use: "",
+        rating: "",
+      });
 
     const handleFilterChange = (filterName, value) => {
         setFilterValues(prevState => {
@@ -28,6 +33,7 @@ const Sidebar = () => {
                 <Gender filterValues={filterValues.gender} handleFilterChange={handleFilterChange} />
                 <Price filterValues={filterValues.price} handleFilterChange={handleFilterChange} />
                 <Colors filterValues={filterValues.colors} handleFilterChange={handleFilterChange} />
+                <Brand filterValues={filterValues.brand} handleFilterChange={handleFilterChange} />
 
             </section>
         </>
