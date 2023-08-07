@@ -1,7 +1,10 @@
 .sidebar-title {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: normal;
-    margin-bottom: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sidebar-items {
@@ -14,16 +17,22 @@
 .brand-filter-container,
 .rating-filter-container,
 .use-filter-container {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    width: 80%;
-    padding: 6px;
+    margin: 2.5% 5% 2.5% 8%;
+    width: 75%;
+    padding: 2px;
     border-radius: 6px;
-    background-color: #5679abd6;
+    background-color: #5679ab0d;
+    border: 1px solid #40454a;
 }
 
 .filter-items-wrapper {
-    margin-left: 1rem;
+    margin-left: 1.6rem;
+}
+
+.selected-category-arrow{
+    font-size: 15px;
+    margin-top: 3px;
+    color:  #40454ad1 !important;
 }
 
 .filter-items-wrapper * {
@@ -35,13 +44,21 @@
 .sidebar-label-container {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding-left: 30px;
     margin-bottom: 12px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.sidebar-label-container:first-of-type{
+    margin-top: 12px;
+}
+
+.sidebar-label-container:hover{
+    font-weight: bold;
 }
 
 .sidebar-label-container input {
@@ -56,7 +73,7 @@
     left: 0;
     height: 17px;
     width: 17px;
-    background-color: #eee;
+    background-color: #dbdbdbcf;
     border-radius: 50%;
 }
 

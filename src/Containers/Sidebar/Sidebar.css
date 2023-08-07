@@ -11,6 +11,10 @@
     flex-direction: column;
 }
 
+.sidebar * {
+    color: #40454a;
+}
+
 
 .filters-title-container {
     border-bottom: 2px solid black;

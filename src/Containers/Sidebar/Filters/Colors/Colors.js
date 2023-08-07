@@ -1,11 +1,16 @@
 import Input from '../../../../Components/Input/Input';
+import useExpandable from '../../../../hooks/Expand';
 import '../Filters.css';
+import { BiSolidDownArrow, BiSolidRightArrow } from 'react-icons/bi';
 
 const Colors = ({ filterValues, handleFilterChange }) => {
+  const { isOpen, toggleOpen } = useExpandable();
+
   return (
     <div className='colors-filter-container'>
-      <h2 className="sidebar-title color-title">Colors</h2>
-      <div className='filter-items-wrapper'>
+      <h2 className="sidebar-title color-title" onClick={toggleOpen}>Colors
+      <div className='selected-category-arrow'>{isOpen ? <BiSolidDownArrow/> : <BiSolidRightArrow/> }</div></h2>
+      <div className={`filter-items-wrapper ${isOpen ? 'open' : 'closed'}`}>
         <Input
           value="black"
           title="Black"
