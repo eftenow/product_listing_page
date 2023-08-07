@@ -9,10 +9,6 @@
     width: calc(100vw - 314px);
 }
 
-.sub-nav ul * {
-    margin-right: 10px;
-}
-
 .sub-nav *{
     font-size: 1em;
     color: #fff;
@@ -32,4 +28,8 @@
 
 .nav-item:hover {
     background-color: #555; /* adjust as necessary */
+}
+
+.nav-item.selected-category{
+    background-color: #5679ab;
 }

@@ -480,7 +480,7 @@ const data = [
 
   {
     img: "https://m.media-amazon.com/images/I/61y5O3SWkAL._AC_UY1000_.jpg",
-    title: "Ted Baker Malikaa",
+    title: "Ted Baker Superb",
     rating: 2.7,
     prevPrice: 90,
     newPrice: null,

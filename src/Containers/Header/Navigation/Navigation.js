@@ -1,14 +1,21 @@
 import './Navigation.css'
 import SortDropdown from '../../../Components/SortDropdown/SortDropdown';
 
-const Navigation = ({ onCategoryChange }) => {
+const Navigation = ({ onCategoryChange, selectedCategory }) => {
+    const categories = ['Sneakers', 'Flats', 'Sandals', 'Heels'];
+    
     return (
         <nav className="sub-nav">
             <ul>
-                <li className="nav-item" onClick={() => onCategoryChange('Sneakers')}>Sneakers</li>
-                <li className="nav-item" onClick={() => onCategoryChange('Flats')}>Flats</li>
-                <li className="nav-item" onClick={() => onCategoryChange('Sandals')}>Sandals</li>
-                <li className="nav-item" onClick={() => onCategoryChange('Heels')}>Heels</li>
+                {categories.map(category => (
+                    <li 
+                        key={category}
+                        className={`nav-item ${selectedCategory === category ? 'selected-category' : ''}`}
+                        onClick={() => onCategoryChange(category)}
+                    >
+                        {category}
+                    </li>
+                ))}
             </ul>
             <SortDropdown />
         </nav>

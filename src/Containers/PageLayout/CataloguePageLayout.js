@@ -13,14 +13,12 @@ const CataloguePageLayout = ({ data, selectedCategory, onCategoryChange }) => {
 
   return (
     <>
-      <Navigation onCategoryChange={onCategoryChange} />
+      <Navigation onCategoryChange={onCategoryChange} selectedCategory={selectedCategory} />
       <main>
         <Sidebar />
         <Products data={filteredData} />
       </main>
     </>
-
-
   );
 };
 
