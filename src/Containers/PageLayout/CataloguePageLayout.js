@@ -13,9 +13,11 @@ const CataloguePageLayout = () => {
     
     return (
         <>
-            <Sidebar />
             <Navigation />
+            <main>
+            <Sidebar />
             <Products />
+            </main>
         </>
 
     );

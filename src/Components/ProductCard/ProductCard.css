@@ -4,21 +4,24 @@
     flex-direction: column;
     align-items: center;
     background: #fff;
-    margin: 20px;
-    padding: 4px;
-    border-radius: 10px;
+    margin: 16px 24px;
+    padding: 1px 4px;
+    border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 202px;
+    width: 207px;
     transition: 0.3s;
 }
 
+
 .product-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(215, 213, 213);
 }
 
 .product-card img {
-    max-height: 240px; 
-    max-width: 200px; 
+    max-height: 240px;
+    max-width: 210px;
+    width: 205px; 
     object-fit: cover; 
 }
 

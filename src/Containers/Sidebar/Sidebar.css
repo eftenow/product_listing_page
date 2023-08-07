@@ -1,22 +1,22 @@
 .sidebar {
     width: 300px;
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     height: 100%;
     transition: width 300ms;
-    margin-top: 84px;
     border-right: 1px solid #40454a78;
     align-items: start;
     display: flex;
     flex-direction: column;
 }
 
+
 .filters-title-container {
     border-bottom: 2px solid black;
-    margin: 1rem auto 2.6rem auto;
+    margin: -1.5rem auto 2.6rem auto;
     padding: 5px 10px;
-    padding: 1.25rem 1.7rem;
+    padding: 0.25rem 1.7rem;
 }
 
 .filters-title-container h1 {
