@@ -1,7 +1,10 @@
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 4rem;
+    width: 77%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
 }
 
 

@@ -2,7 +2,7 @@ import Input from "../../../../Components/Input/Input";
 import '../Filters.css';
 
 const Brand = ({ filterValues, handleFilterChange }) => {
-  const brands = ['Nike', 'Adidas', 'Puma']; 
+  const brands = ['Nike', 'Adidas', 'Puma', 'Vans']; 
 
   return (
     <div className='brand-filter-container'>

@@ -4,23 +4,24 @@ import Navigation from "../Header/Navigation/Navigation";
 import Products from "../Products/Products";
 import Sidebar from "../Sidebar/Sidebar";
 import './CataloguePageLayout.css'
-import { eventWrapper } from "@testing-library/user-event/dist/utils";
-import ProjectData from "../../assets/ProjectData/data.js";
 
 
 
-const CataloguePageLayout = () => {
-    
-    return (
-        <>
-            <Navigation />
-            <main>
-            <Sidebar />
-            <Products />
-            </main>
-        </>
 
-    );
+const CataloguePageLayout = ({ data, selectedCategory, onCategoryChange }) => {
+  const filteredData = data.filter(item => item.category.toLowerCase() === selectedCategory.toLowerCase());
+
+  return (
+    <>
+      <Navigation onCategoryChange={onCategoryChange} />
+      <main>
+        <Sidebar />
+        <Products data={filteredData} />
+      </main>
+    </>
+
+
+  );
 };
 
 export default CataloguePageLayout;

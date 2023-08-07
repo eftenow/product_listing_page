@@ -1,18 +1,16 @@
 import ProductCard from '../../Components/ProductCard/ProductCard';
 import './Products.css';
 
-const Products = () => {
+const Products = ({ data }) => {
     return (
         <>
             <section className='cards-container'>
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-        
+                {data.map(item => <ProductCard key={item.title} data={item} />)}
             </section>
         </>
-    )
+    );
 };
+
 
 
 export default Products;

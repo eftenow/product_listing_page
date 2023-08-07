@@ -6,7 +6,7 @@ const Use = ({ filterValues, handleFilterChange }) => {
   
     return (
       <div className='use-filter-container'>
-        <h2 className="sidebar-title">Use</h2>
+        <h2 className="sidebar-title">Occasion</h2>
   
         <div className='filter-items-wrapper'>
           {uses.map((use) => (

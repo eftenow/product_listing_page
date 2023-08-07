@@ -4,32 +4,34 @@ import { AiTwotoneStar } from 'react-icons/ai';
 import './ProductCard.css';
 
 
-const ProductCard = () => {
+const ProductCard = ({ data }) => {
     return (
         <article className='product-card'>
-            <img className="product-image" src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/cabc3285-a6b3-40af-9261-8cdf403166ad/gt-jump-basketball-shoes-Fc9gSw.png" alt='Product' />
+            <img className="product-image" src={data.img} alt={data.title} />
             <div className='card-details'>
-                <p className="brand-name">Nike</p>
-                <p className='card-title'>Nike Air Force 1</p>
+                <p className="brand-name">{data.brand}</p>
+                <p className='card-title'>{data.title}</p>
                 <section className="card-reviews">
-                            <AiTwotoneStar className='rating-star' />
-                            <span className="total-reviews">5</span>
-                        </section>
+                    <AiTwotoneStar className='rating-star' />
+                    <span className="total-reviews">{data.rating}</span>
+                </section>
                 <section className='card-price'>
                     <div className='price'>
-                        <span className='discounted-price'>$100</span> <del>$120</del>
+                        <span className='discounted-price'>${data.newPrice}</span> <del>${data.prevPrice}</del>
                     </div>
                     <div className='purchase-item'>
                         <BiShoppingBag className='purchase-item-icon' />
                     </div>
                     <div className="discount">
-                        <span>-10%</span>
+                        <span>-{Math.round((1 - data.newPrice / data.prevPrice) * 100)}%</span>
+
                     </div>
                 </section>
             </div>
         </article>
-    )
+    );
 }
+
 
 
 export default ProductCard;

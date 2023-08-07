@@ -1,5 +1,3 @@
-import { AiFillStar } from "react-icons/ai";
-
 const data = [
   {
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
@@ -15,7 +13,7 @@ const data = [
   },
   {
     img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
-    title: "Nike Air Vapormax Plus",
+    title: "Nike Air Plus",
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
@@ -253,7 +251,7 @@ const data = [
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
-    brand: "puma",
+    brand: "Puma",
     color: "black",
     category: "heels",
     audience: "men",
