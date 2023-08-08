@@ -85,8 +85,9 @@ del{
   }
   
   .total-reviews {
-    font-size: 14px;
-    margin-left: 6px;
+    font-size: 15px;
+    margin-left: 2px;
+    font-weight: bold;
   }
 
 .discount{
