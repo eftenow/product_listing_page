@@ -6,7 +6,7 @@ const Input = ({ title, value, name, onChange, filterValues, color }) => {
                 name={name}
                 value={value}
                 onChange={() => onChange(name, value)}
-                checked={filterValues === value}
+                checked={filterValues.active && filterValues.value === value}
             />
             <span id={color === 'white' ? 'white-checkbox' : ''} className="checkmark" style={{ backgroundColor: color }}></span>
 

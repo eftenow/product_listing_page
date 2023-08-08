@@ -10,11 +10,22 @@ import { useState } from 'react';
 
 
 const Sidebar = ({ filterValues, setFilterValues }) => {
-    const handleFilterChange = (filterName, value) => {
+    const handleFilterChange = (filterName, newValue) => {
+
         setFilterValues(prevState => {
-            return { ...prevState, [filterName]: value };
+            // the 'isAlreadyActive' checks if the user is selecting a filter value, which was already selected, knowing if that is the case or not
+            // lets us determine wheter we should de-select certain filter or apply it.
+            const isAlreadyActive = prevState[filterName].active && prevState[filterName].value === newValue;
+    
+            return {
+                ...prevState,
+                [filterName]: {
+                    value: newValue,
+                    active: !isAlreadyActive
+                }};
         });
     };
+    
 
     return (
         <>
