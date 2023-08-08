@@ -4,6 +4,7 @@ import logo from '../../assets/images/logo.png';
 
 
 import './Header.css'
+import Searchbar from '../../Components/Searchbar/Searchbar';
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
-        <input className="search" type="text" placeholder="Search" />
+        <Searchbar />
         <div className="icons">
           <div className='icon-container'><FaShoppingCart className="icon" /></div>
           <div className='icon-container'><FaUser className="icon" /></div>

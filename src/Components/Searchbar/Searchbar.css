@@ -1,0 +1,45 @@
+.search-container {
+    width: 300px;
+    position: relative;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .suggestions-box {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+  }
+  
+  .suggestion {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .suggestion-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .suggestion-text {
+    font-size: 16px;
+  }
+  
