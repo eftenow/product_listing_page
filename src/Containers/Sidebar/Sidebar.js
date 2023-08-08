@@ -24,7 +24,7 @@ const Sidebar = ({ filterValues, setFilterValues }) => {
                 </div>
                 <Gender filterValues={filterValues.gender} handleFilterChange={handleFilterChange} />
                 <Price filterValues={filterValues.price} handleFilterChange={handleFilterChange} />
-                <Colors filterValues={filterValues.colors} handleFilterChange={handleFilterChange} />
+                <Colors filterValues={filterValues.color} handleFilterChange={handleFilterChange} />
                 <Brand filterValues={filterValues.brand} handleFilterChange={handleFilterChange} />
                 <Use filterValues={filterValues.use} handleFilterChange={handleFilterChange} />
                 <Rating filterValues={filterValues.rating} handleFilterChange={handleFilterChange} />

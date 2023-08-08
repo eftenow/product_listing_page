@@ -8,7 +8,8 @@ const Input = ({ title, value, name, onChange, filterValues, color }) => {
                 onChange={() => onChange(name, value)}
                 checked={filterValues === value}
             />
-            <span className="checkmark" style={{ backgroundColor: color }}></span>
+            <span id={color === 'white' ? 'white-checkbox' : ''} className="checkmark" style={{ backgroundColor: color }}></span>
+
             {title}
         </label>
     );

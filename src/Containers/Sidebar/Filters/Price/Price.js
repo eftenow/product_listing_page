@@ -14,7 +14,7 @@ const Price = ({ filterValues, handleFilterChange }) => {
      <div className={`filter-items-wrapper ${isOpen ? 'open' : 'closed'}`}>
         <Input
           value={50}
-          title="$0 - 50"
+          title="0 - $50"
           name="price"
           filterValues={filterValues}
           onChange={handleFilterChange}
@@ -22,7 +22,7 @@ const Price = ({ filterValues, handleFilterChange }) => {
 
         <Input
           value={100}
-          title="$50 - $100"
+          title="$51 - $100"
           name="price"
           filterValues={filterValues}
           onChange={handleFilterChange}
@@ -30,7 +30,7 @@ const Price = ({ filterValues, handleFilterChange }) => {
 
         <Input
           value={150}
-          title="$100 - $150"
+          title="$101 - $150"
           name="price"
           filterValues={filterValues}
           onChange={handleFilterChange}
@@ -43,6 +43,7 @@ const Price = ({ filterValues, handleFilterChange }) => {
           filterValues={filterValues}
           onChange={handleFilterChange}
         />
+
       </div>
     </div>
   )

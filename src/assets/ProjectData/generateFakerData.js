@@ -16,7 +16,7 @@ const products = Array.from({length: 120}, () => {
     brand: faker.company.companyName(),
     color: faker.commerce.color(),
     category,
-    audience: faker.random.arrayElement(['men', 'women']),
+    gender: faker.random.arrayElement(['men', 'women']),
     use,
   }
 });

@@ -8,19 +8,19 @@ const data = [
     brand: "Nike",
     color: "white",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
-    img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/71GsU5sIlwL._AC_UL600_SR600,600_.jpg",
     title: "Nike Air Plus",
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
     brand: "Nike",
-    color: "red",
+    color: "white",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
@@ -33,7 +33,7 @@ const data = [
     brand: "Nike",
     color: "green",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -45,7 +45,7 @@ const data = [
     brand: "Nike",
     color: "black",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -57,7 +57,7 @@ const data = [
     brand: "Adidas",
     color: "black",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
@@ -70,7 +70,7 @@ const data = [
     brand: "Adidas",
     color: "green",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
@@ -83,25 +83,25 @@ const data = [
     brand: "Adidas",
     color: "blue",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
   {
-    img: "https://m.media-amazon.com/images/I/71qv-cBRMtL._AC_UY1000_.jpg",
-    title: "Adidas Urdin 2",
+    img: "https://images-na.ssl-images-amazon.com/images/I/715nsoG8fML._AC_UL600_SR600,600_.jpg",
+    title: "Adidas Terrex",
     rating: 3.9,
     prevPrice: 110,
     newPrice: 70,
     brand: "Adidas",
     color: "blue",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
   {
-    img: "https://m.media-amazon.com/images/I/71qv-cBRMtL._AC_UY1000_.jpg",
+    img: "https://m.media-amazon.com/images/I/81j05hcQq4L._AC_UY1000_.jpg",
     title: "Adidas Kaptir",
     rating: 3.9,
     prevPrice: 150,
@@ -109,12 +109,12 @@ const data = [
     brand: "Adidas",
     color: "blue",
     category: "sneakers",
-    audience: "women",
+    gender: "women",
     use: "sport"
   },
 
   {
-    img: "https://m.media-amazon.com/images/I/71qv-cBRMtL._AC_UY1000_.jpg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/7126V04sHZL._AC_UL600_SR600,600_.jpg",
     title: "Adidas Lite Race",
     rating: 3.6,
     prevPrice: 70,
@@ -122,7 +122,7 @@ const data = [
     brand: "Adidas",
     color: "blue",
     category: "sneakers",
-    audience: "women",
+    gender: "women",
     use: "sport"
   },
 
@@ -135,7 +135,7 @@ const data = [
     brand: "Adidas",
     color: "white",
     category: "sneakers",
-    audience: "women",
+    gender: "women",
     use: "sport"
   },
 
@@ -148,7 +148,7 @@ const data = [
     brand: "Adidas",
     color: "white",
     category: "sneakers",
-    audience: "women",
+    gender: "women",
     use: "sport"
   },
 
@@ -161,7 +161,7 @@ const data = [
     brand: "Adidas",
     color: "green",
     category: "sneakers",
-    audience: "women",
+    gender: "women",
     use: "sport"
   },
 
@@ -174,7 +174,7 @@ const data = [
     brand: "Vans",
     color: "green",
     category: "flats",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -186,7 +186,7 @@ const data = [
     brand: "Adidas",
     color: "black",
     category: "flats",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
@@ -199,7 +199,7 @@ const data = [
     brand: "Vans",
     color: "white",
     category: "flats",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
@@ -212,7 +212,7 @@ const data = [
     brand: "Nike",
     color: "green",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
@@ -225,20 +225,20 @@ const data = [
     brand: "Adidas",
     color: "blue",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
   {
-    img: "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
-    title: "PUMA BLACK-OCE",
+    img: "https://m.media-amazon.com/images/I/81EjYLVUPUL._AC_UY1000_.jpg",
+    title: "PUMA GREEN-OCE",
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
     brand: "Puma",
     color: "green",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -250,7 +250,7 @@ const data = [
     brand: "Puma",
     color: "red",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -262,7 +262,7 @@ const data = [
     brand: "Puma",
     color: "black",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -274,7 +274,7 @@ const data = [
     brand: "Puma",
     color: "white",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -286,7 +286,7 @@ const data = [
     brand: "Puma",
     color: "black",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
@@ -299,7 +299,7 @@ const data = [
     brand: "Puma",
     color: "green",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -311,7 +311,7 @@ const data = [
     brand: "Vans",
     color: "red",
     category: "flats",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -323,7 +323,7 @@ const data = [
     brand: "Vans",
     color: "white",
     category: "skate",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -335,7 +335,7 @@ const data = [
     brand: "Vans",
     color: "blue",
     category: "skate",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
   {
@@ -347,7 +347,7 @@ const data = [
     brand: "Vans",
     color: "black",
     category: "skate",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
  
@@ -360,7 +360,7 @@ const data = [
     brand: "Gucci",
     color: "black",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
   {
@@ -372,7 +372,7 @@ const data = [
     brand: "Prada",
     color: "red",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
   {
@@ -384,7 +384,7 @@ const data = [
     brand: "Nike",
     color: "red",
     category: "sneakers",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 
@@ -397,7 +397,7 @@ const data = [
     brand: "Gucci",
     color: "black",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -410,7 +410,7 @@ const data = [
     brand: "Gucci",
     color: "white",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
   {
@@ -422,7 +422,7 @@ const data = [
     brand: "Prada",
     color: "black",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -435,7 +435,7 @@ const data = [
     brand: "Ted Baker",
     color: "red",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -448,7 +448,7 @@ const data = [
     brand: "Ted Baker",
     color: "white",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -461,7 +461,7 @@ const data = [
     brand: "Ted Baker",
     color: "black",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -474,7 +474,7 @@ const data = [
     brand: "Ted Baker",
     color: "blue",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -487,7 +487,7 @@ const data = [
     brand: "Ted Baker",
     color: "blue",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -500,7 +500,7 @@ const data = [
     brand: "Ted Baker",
     color: "green",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -513,7 +513,7 @@ const data = [
     brand: "Gucci",
     color: "red",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -526,7 +526,7 @@ const data = [
     brand: "Prada",
     color: "blue",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -539,7 +539,7 @@ const data = [
     brand: "Prada",
     color: "red",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -552,7 +552,7 @@ const data = [
     brand: "Prada",
     color: "black",
     category: "heels",
-    audience: "women",
+    gender: "women",
     use: "formal"
   },
 
@@ -565,7 +565,7 @@ const data = [
     brand: "Adidas",
     color: "black",
     category: "flats",
-    audience: "men",
+    gender: "men",
     use: "sport"
   },
 ];
