@@ -3,8 +3,26 @@ import { BiShoppingBag } from 'react-icons/bi';
 import { AiTwotoneStar } from 'react-icons/ai';
 import './ProductCard.css';
 
-
 const ProductCard = ({ data }) => {
+    const renderPrice = () => {
+        return data.newPrice ? (
+            <>
+                <span className='discounted-price'>${data.newPrice}</span>
+                <del>${data.prevPrice}</del>
+            </>
+        ) : (
+            <span className='regularPrice'>${data.prevPrice}</span>
+        );
+    };
+
+    const renderDiscount = () => {
+        return data.newPrice ? (
+            <div className="discount">
+                <span>-{Math.round((1 - data.newPrice / data.prevPrice) * 100)}%</span>
+            </div>
+        ) : null;
+    };
+
     return (
         <article className='product-card'>
             <img className="product-image" src={data.img} alt={data.title} />
@@ -17,20 +35,18 @@ const ProductCard = ({ data }) => {
                 </section>
                 <section className='card-price'>
                     <div className='price'>
-                        <span className='discounted-price'>${data.newPrice}</span> <del>${data.prevPrice}</del>
+                        {renderPrice()}
                     </div>
                     <div className='purchase-item'>
                         <BiShoppingBag className='purchase-item-icon' />
                     </div>
-                    <div className="discount">
-                        <span>-{Math.round((1 - data.newPrice / data.prevPrice) * 100)}%</span>
-
-                    </div>
+                    {renderDiscount()}
                 </section>
             </div>
         </article>
     );
 }
+
 
 
 

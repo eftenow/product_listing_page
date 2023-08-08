@@ -38,6 +38,7 @@
 .card-price{
     display: flex;
     align-items: center;
+    margin: 1px 3px;
 }
 
 .price {
@@ -46,14 +47,14 @@
 
 .price span {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     color: #494949;
     text-decoration: none;
 }
 
 del{
     font-size: 14px;
-    margin-left: 2px;
+    margin-left: 4px;
 }
 
 .purchase-item-icon {
@@ -74,9 +75,9 @@ del{
 }
 
 .card-reviews {
-    margin-top: 0.2rem;
-    margin-bottom: 0.55rem;
+    margin: 2px 0;
     display: flex;
+
   }
   
   .rating-star {
@@ -99,14 +100,16 @@ del{
     font-weight: bold;
 }
 
-.card-details p {
+.card-details p{
     color: #494949;
     margin: 3px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
+
+
 .card-details .brand-name{
-    font-size: 12.5px;
+    font-size: 13px;
     color: rgb(130, 139, 141);
     font-weight: bold;
 }
