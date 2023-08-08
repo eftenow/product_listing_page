@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import data from '../../assets/ProjectData/data.js';
-import './Searchbar.css'
+import './Searchbar.css';
+
 
 function Searchbar() {
   const [searchText, setSearchText] = useState("");
@@ -25,7 +26,7 @@ function Searchbar() {
 
   return (
     <div className="search-container">
-      <input type="text" value={searchText} onChange={handleSearchChange} placeholder="Search shoes..." />
+      <input className="search-text" type="text" value={searchText} onChange={handleSearchChange} placeholder="Search..." />
       <div className="suggestions-box">
         {filteredShoes.map(shoe => (
           <div key={shoe.title} className="suggestion" onClick={() => handleSuggestionClick(shoe.title)}>
@@ -36,6 +37,7 @@ function Searchbar() {
       </div>
     </div>
   );
+  
 }
 
 export default Searchbar;

@@ -3,38 +3,46 @@
     position: relative;
   }
   
-  input[type="text"] {
+.search-text {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #40454a;
   }
+
+  .search-text:focus {
+    outline: none;
+}
   
   .suggestions-box {
-    max-height: 150px;
+    max-height: 250px;
     overflow-y: auto;
-    border: 1px solid #ccc;
     position: absolute;
     width: 100%;
     top: 100%;
     left: 0;
-    z-index: 10;
-    background-color: #fff;
+    z-index: 5;
+    border-radius: 8px;
+    background-color: #3f3f3f;
+    margin-top: 2px;
   }
   
   .suggestion {
-    padding: 10px;
+    padding: 12px;
     display: flex;
     align-items: center;
     cursor: pointer;
   }
   
   .suggestion:hover {
-    background-color: #f7f7f7;
+    background-color: #514b4b;
+    font-weight: bold;
   }
   
   .suggestion-img {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 37px;
     object-fit: cover;
     margin-right: 10px;
   }
@@ -42,4 +50,7 @@
   .suggestion-text {
     font-size: 16px;
   }
+
+
+
   
