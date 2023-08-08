@@ -28,14 +28,6 @@ const Gender = ({ filterValues, handleFilterChange }) => {
          onChange={handleFilterChange}
        />
 
-       <Input
-         value="all"
-         title="All"
-         name="gender"
-         filterValues={filterValues}
-         onChange={handleFilterChange}
-       />
-
      </div>
    </div>
   )

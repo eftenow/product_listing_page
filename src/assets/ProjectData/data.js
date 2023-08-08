@@ -1,41 +1,29 @@
 const data = [
   {
-    img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
-    title: "Nike Air Monarch IV",
-    rating: 4.5,
-    prevPrice: 180,
-    newPrice: 110,
+    img: "https://m.media-amazon.com/images/I/71vHVAn2qOS._AC_UY1000_.jpg",
+    title: "Nike Trail Run",
+    rating: 4.0,
+    prevPrice: 320,
+    newPrice: 280,
     brand: "Nike",
     color: "white",
     category: "sneakers",
-    gender: "men",
+    gender: "women",
     use: "sport"
   },
   {
-    img: "https://images-na.ssl-images-amazon.com/images/I/71GsU5sIlwL._AC_UL600_SR600,600_.jpg",
-    title: "Nike Air Plus",
-    rating: 4.5,
-    prevPrice: 180,
-    newPrice: 110,
-    brand: "Nike",
-    color: "white",
+    img: "https://m.media-amazon.com/images/I/71R7VLxkFpL._AC_UY1000_.jpg",
+    title: "Vans women's ward",
+    rating: 3.9,
+    prevPrice: 170,
+    newPrice: 150,
+    brand: "Vans",
+    color: "red",
     category: "sneakers",
-    gender: "men",
+    gender: "women",
     use: "sport"
   },
 
-  {
-    img: "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
-    title: "Nike Waffle One Sneaker",
-    rating: 4.5,
-    prevPrice: 180,
-    newPrice: 110,
-    brand: "Nike",
-    color: "green",
-    category: "sneakers",
-    gender: "men",
-    use: "sport"
-  },
   {
     img: "https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg",
     title: "Nike Running Shoe",
@@ -46,6 +34,19 @@ const data = [
     color: "black",
     category: "sneakers",
     gender: "men",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71Zqea+-O6L._AC_UY1000_.jpg",
+    title: "Adidas Fluidflow",
+    rating: 4.6,
+    prevPrice: 230,
+    newPrice: null,
+    brand: "Adidas",
+    color: "white",
+    category: "sneakers",
+    gender: "women",
     use: "sport"
   },
   {
@@ -138,7 +139,43 @@ const data = [
     gender: "women",
     use: "sport"
   },
+  {
+    img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+    title: "Nike Air Monarch IV",
+    rating: 4.5,
+    prevPrice: 180,
+    newPrice: 110,
+    brand: "Nike",
+    color: "white",
+    category: "sneakers",
+    gender: "men",
+    use: "sport"
+  },
+  {
+    img: "https://images-na.ssl-images-amazon.com/images/I/71GsU5sIlwL._AC_UL600_SR600,600_.jpg",
+    title: "Nike Air Plus",
+    rating: 4.5,
+    prevPrice: 180,
+    newPrice: 110,
+    brand: "Nike",
+    color: "white",
+    category: "sneakers",
+    gender: "men",
+    use: "sport"
+  },
 
+  {
+    img: "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+    title: "Nike Waffle One Sneaker",
+    rating: 4.5,
+    prevPrice: 180,
+    newPrice: 110,
+    brand: "Nike",
+    color: "green",
+    category: "sneakers",
+    gender: "men",
+    use: "sport"
+  },
   {
     img: "https://m.media-amazon.com/images/I/61iPwlHClhL._AC_UY1000_.jpg",
     title: "Adidas Stan Smith",
