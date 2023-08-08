@@ -2,7 +2,7 @@ import './Navigation.css'
 import SortDropdown from '../../../Components/SortDropdown/SortDropdown';
 
 const Navigation = ({ onCategoryChange, selectedCategory }) => {
-    const categories = ['Sneakers', 'Flats', 'Sandals', 'Heels'];
+    const categories = ['Sneakers', 'Flats', 'Skate', 'Heels'];
     
     return (
         <nav className="sub-nav">

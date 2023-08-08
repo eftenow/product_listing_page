@@ -9,16 +9,7 @@ import './Sidebar.css'
 import { useState } from 'react';
 
 
-const Sidebar = () => {
-    const [filterValues, setFilterValues] = useState({
-        gender: "",
-        price: "",
-        colors: "",
-        brand: "",
-        use: "",
-        rating: "",
-      });
-
+const Sidebar = ({ filterValues, setFilterValues }) => {
     const handleFilterChange = (filterName, value) => {
         setFilterValues(prevState => {
             return { ...prevState, [filterName]: value };
@@ -37,12 +28,10 @@ const Sidebar = () => {
                 <Brand filterValues={filterValues.brand} handleFilterChange={handleFilterChange} />
                 <Use filterValues={filterValues.use} handleFilterChange={handleFilterChange} />
                 <Rating filterValues={filterValues.rating} handleFilterChange={handleFilterChange} />
-
             </section>
         </>
     )
 }
-
 
 
 export default Sidebar;

@@ -322,7 +322,7 @@ const data = [
     newPrice: 110,
     brand: "Vans",
     color: "white",
-    category: "sandals",
+    category: "skate",
     audience: "men",
     use: "sport"
   },
@@ -334,7 +334,7 @@ const data = [
     newPrice: 110,
     brand: "Vans",
     color: "blue",
-    category: "sandals",
+    category: "skate",
     audience: "men",
     use: "sport"
   },
@@ -344,9 +344,9 @@ const data = [
     rating: 4.5,
     prevPrice: 180,
     newPrice: 110,
-    brand: "Nike",
+    brand: "Vans",
     color: "black",
-    category: "sandals",
+    category: "skate",
     audience: "men",
     use: "sport"
   },
@@ -360,7 +360,7 @@ const data = [
     brand: "Gucci",
     color: "black",
     category: "heels",
-    audience: "formal",
+    audience: "women",
     use: "formal"
   },
   {
