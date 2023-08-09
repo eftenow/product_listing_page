@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BiShoppingBag } from 'react-icons/bi';
 import { AiTwotoneStar } from 'react-icons/ai';
 import './ProductCard.css';
+import Notification from '../Notification/Notification';
 
 const ProductCard = ({ data }) => {
+    const [notificationVisible, setNotificationVisible] = useState(false);
+    const [notificationMessage, setNotificationMessage] = useState("");
+
+    const handlePurchaseClick = () => {
+        setNotificationMessage(`${data.title} successfully added to the cart!`);
+        setNotificationVisible(true);
+    };
     const renderPrice = () => {
         return data.newPrice ? (
             <>
@@ -24,6 +32,7 @@ const ProductCard = ({ data }) => {
     };
 
     return (
+        <>
         <article className='product-card'>
             <img className="product-image" src={data.img} alt={data.title} />
             <div className='card-details'>
@@ -37,13 +46,17 @@ const ProductCard = ({ data }) => {
                     <div className='price'>
                         {renderPrice()}
                     </div>
-                    <button className='purchase-item'>
+                    <button className='purchase-item' onClick={handlePurchaseClick}>
                         <BiShoppingBag className='purchase-item-icon' />
                     </button>
+
                     {renderDiscount()}
                 </section>
             </div>
         </article>
+        {notificationVisible && (
+            <Notification message={notificationMessage} onClose={() => setNotificationVisible(false)} />
+        )}</>
     );
 }
 
