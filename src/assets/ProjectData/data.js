@@ -32,9 +32,22 @@ const data = [
     newPrice: 150,
     brand: "Vans",
     color: "red",
-    category: "sneakers",
+    category: "skate",
     gender: "women",
     use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61tM6KKzU6L._AC_UY1000_.jpg",
+    title: "Vans Slip-on",
+    rating: 2.9,
+    prevPrice: 140,
+    newPrice: 120,
+    brand: "Vans",
+    color: "white",
+    category: "skate",
+    gender: "men",
+    use: "casual"
   },
 
   {
@@ -221,23 +234,75 @@ const data = [
     rating: 2.6,
     prevPrice: 180,
     newPrice: null,
-    brand: "Vans",
+    brand: "Ted Baker",
     color: "green",
     category: "flats",
-    gender: "men",
-    use: "sport"
+    gender: "women",
+    use: "casual"
   },
   {
     img: "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg",
     title: "Knit Ballet Flat",
     rating: 3.4,
-    prevPrice: 180,
+    prevPrice: 115,
     newPrice: null,
-    brand: "Adidas",
+    brand: "Ted Baker",
+    color: "black",
+    category: "flats",
+    gender: "women",
+    use: "casual"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/6100U+rC-XL._AC_UY1000_.jpg",
+    title: "Ted Baker woman satin",
+    rating: 3.9,
+    prevPrice: 125,
+    newPrice: 115,
+    brand: "Ted Baker",
+    color: "blue",
+    category: "flats",
+    gender: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/815+0G4wwGL._AC_UY1000_.jpg",
+    title: "Prada Men's Black",
+    rating: 3.2,
+    prevPrice: 220,
+    newPrice: null,
+    brand: "Prada",
     color: "black",
     category: "flats",
     gender: "men",
-    use: "sport"
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71OPC6v3cxL._AC_UY1000_.jpg",
+    title: "Prada white leather",
+    rating: 2.5,
+    prevPrice: 175,
+    newPrice: 125,
+    brand: "Prada",
+    color: "white",
+    category: "flats",
+    gender: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://thesuitdepot.com/cdn/shop/products/carrucci-shoes-for-amazon-carrucci-mens-navy-blue-suede-cap-toe-oxford-leather-dress-shoes-29547371626678_2048x.jpg?v=1656951143",
+    title: "Gucci Blue Leather",
+    rating: 3.5,
+    prevPrice: 240,
+    newPrice: null,
+    brand: "Gucci",
+    color: "blue",
+    category: "flats",
+    gender: "men",
+    use: "formal"
   },
 
   {
@@ -246,11 +311,24 @@ const data = [
     rating: 2.5,
     prevPrice: 135,
     newPrice: 125,
-    brand: "Vans",
+    brand: "Ted Baker",
     color: "white",
     category: "flats",
-    gender: "men",
-    use: "sport"
+    gender: "women",
+    use: "casual"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61ByY9jM4hL._AC_UY1000_.jpg",
+    title: "Gucci Women's flats",
+    rating: 2.5,
+    prevPrice: 135,
+    newPrice: 95,
+    brand: "Gucci",
+    color: "black",
+    category: "flats",
+    gender: "women",
+    use: "formal"
   },
 
   {
@@ -303,6 +381,114 @@ const data = [
     gender: "men",
     use: "sport"
   },
+
+  {
+    img: "https://m.media-amazon.com/images/I/81G1OfSPfVL._AC_UY1000_.jpg",
+    title: "Vans Classics Black",
+    rating: 4.6,
+    prevPrice: 110,
+    newPrice: 75,
+    brand: "Vans",
+    color: "black",
+    category: "skate",
+    gender: "men",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/81hgDep9IwL._AC_UY1000_.jpg",
+    title: "Adidas Men's Seeley",
+    rating: 4.1,
+    prevPrice: 90,
+    newPrice: 65,
+    brand: "Adidas",
+    color: "black",
+    category: "skate",
+    gender: "men",
+    use: "casual"
+  },
+
+
+  {
+    img: "https://m.media-amazon.com/images/I/71R7VLxkFpL._AC_UY1000_.jpg",
+    title: "Vans Burgundy",
+    rating: 4.1,
+    prevPrice: 115,
+    newPrice: 70,
+    brand: "Vans",
+    color: "red",
+    category: "skate",
+    gender: "women",
+    use: "casual"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/51PawPhslZL._AC_UY1000_.jpg",
+    title: "Vans Athletic W",
+    rating: 4.2,
+    prevPrice: 130,
+    newPrice: 100,
+    brand: "Vans",
+    color: "white",
+    category: "casual",
+    gender: "women",
+    use: "sport"
+  },
+
+
+  {
+    img: "https://m.media-amazon.com/images/I/71gqn3vLpqL._AC_UY1000_.jpg",
+    title: "Vans Women's High top",
+    rating: 4.4,
+    prevPrice: 145,
+    newPrice: 110,
+    brand: "Vans",
+    color: "black",
+    category: "skate",
+    gender: "women",
+    use: "casual"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71gqn3vLpqL._AC_UY1000_.jpg",
+    title: "Nike Skate J",
+    rating: 4.5,
+    prevPrice: 155,
+    newPrice: 115,
+    brand: "Nike",
+    color: "white",
+    category: "skate",
+    gender: "men",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61qjgJFzrSL._AC_UY1000_.jpg",
+    title: "Nike SB Alleyoop",
+    rating: 3.6,
+    prevPrice: 125,
+    newPrice: 95,
+    brand: "Nike",
+    color: "black",
+    category: "skate",
+    gender: "men",
+    use: "sport"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71apbZy7jML._AC_UY1000_.jpg",
+    title: "Adidas Skate Shoe",
+    rating: 3.9,
+    prevPrice: 130,
+    newPrice: 90,
+    brand: "Adidas",
+    color: "black",
+    category: "skate",
+    gender: "men",
+    use: "sport"
+  },
+
+
   {
     img: "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
     title: "Unisex-Adult Super",
@@ -360,9 +546,9 @@ const data = [
     newPrice: 150,
     brand: "Vans",
     color: "red",
-    category: "flats",
+    category: "skate",
     gender: "men",
-    use: "sport"
+    use: "casual"
   },
   {
     img: "https://m.media-amazon.com/images/I/71gpFHJlnoL._AC_UX575_.jpg",
@@ -425,6 +611,20 @@ const data = [
     gender: "women",
     use: "formal"
   },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61Al-t9oaML._AC_UY1000_.jpg",
+    title: "Prada Women's EX12D4F",
+    rating: 4.7,
+    prevPrice: 380,
+    newPrice: null,
+    brand: "Prada",
+    color: "blue",
+    category: "heels",
+    gender: "women",
+    use: "formal"
+  },
+
   {
     img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
     title: "Nike Air Vapormax Plus",
@@ -450,6 +650,60 @@ const data = [
     gender: "women",
     use: "formal"
   },
+
+  {
+    img: "https://m.media-amazon.com/images/I/51aXDX+IlLL._AC_UY1000_.jpg",
+    title: "Gucci Women's patent",
+    rating: 3.3,
+    prevPrice: 145,
+    newPrice: 110,
+    brand: "Gucci",
+    color: "red",
+    category: "heels",
+    gender: "women",
+    use: "formal"
+  },
+
+
+  {
+    img: "https://m.media-amazon.com/images/I/61RjmYaMpCL._AC_UY1000_.jpg",
+    title: "Gucci heels black leather",
+    rating: 3.7,
+    prevPrice: 245,
+    newPrice: 210,
+    brand: "Gucci",
+    color: "black",
+    category: "heels",
+    gender: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/51L9SCmYIjL._AC_UY1000_.jpg",
+    title: "Gucci women's HX12K",
+    rating: 3.4,
+    prevPrice: 145,
+    newPrice: 110,
+    brand: "Gucci",
+    color: "black",
+    category: "heels",
+    gender: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61J7PxODq2L._AC_UY1000_.jpg",
+    title: "Prada women's JKX22K",
+    rating: 4.9,
+    prevPrice: 245,
+    newPrice: 170,
+    brand: "Gucci",
+    color: "black",
+    category: "heels",
+    gender: "women",
+    use: "formal"
+  },
+
 
   {
     img: "https://m.media-amazon.com/images/I/71h5+MbEK7L._AC_UY625_.jpg",
@@ -609,14 +863,14 @@ const data = [
   {
     img: "https://m.media-amazon.com/images/I/71yhoZP0l6L._AC_UY695_.jpg",
     title: "Wedding Prom Bridal",
-    rating: 4.5,
-    prevPrice: 185,
-    newPrice: 100,
-    brand: "Adidas",
+    rating: 2.9,
+    prevPrice: 225,
+    newPrice: 145,
+    brand: "Prada",
     color: "black",
-    category: "flats",
-    gender: "men",
-    use: "sport"
+    category: "heels",
+    gender: "women",
+    use: "casual"
   },
 ];
 
