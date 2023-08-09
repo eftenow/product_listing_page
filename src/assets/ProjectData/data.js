@@ -128,8 +128,8 @@ const data = [
   },
 
   {
-    img: "https://m.media-amazon.com/images/I/71wd22BMF8L._AC_UY1000_.jpg",
-    title: "Adidas Pumplepus",
+    img: "https://m.media-amazon.com/images/I/719XGfMN6OL._AC_UY580_.jpg",
+    title: "Adidas Smooth Run",
     rating: 4.5,
     prevPrice: 140,
     newPrice: 90,

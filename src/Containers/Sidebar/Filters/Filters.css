@@ -18,7 +18,7 @@
 .rating-filter-container,
 .use-filter-container {
     margin: 2.5% 5% 2.5% 8%;
-    width: 75%;
+    width: 81%;
     padding: 2px;
     border-radius: 6px;
     background-color: #5679ab0d;
@@ -29,10 +29,10 @@
     margin-left: 1.6rem;
 }
 
-.selected-category-arrow{
+.selected-category-arrow {
     font-size: 15px;
     margin-top: 3px;
-    color:  #40454ad1 !important;
+    color: #40454ad1 !important;
 }
 
 .filter-items-wrapper * {
@@ -52,11 +52,11 @@
     user-select: none;
 }
 
-.sidebar-label-container:first-of-type{
+.sidebar-label-container:first-of-type {
     margin-top: 12px;
 }
 
-.sidebar-label-container:hover{
+.sidebar-label-container:hover {
     font-weight: bold;
 }
 
@@ -116,4 +116,38 @@
 .line {
     margin-top: 3rem;
     border-color: #f7f7f7;
+}
+
+
+@media (max-width: 900px) {
+
+    .gender-filter-container,
+    .colors-filter-container,
+    .price-filter-container,
+    .brand-filter-container,
+    .rating-filter-container,
+    .use-filter-container {
+        margin: 1%;
+        width: 95%;
+    }
+
+    .sidebar-label-container {
+        padding-left: 20px;
+    }
+
+    .filter-items-wrapper * {
+        font-size: 13.5px;
+    }
+
+    .checkmark {
+        height: 15.5px;
+        width: 15.5px;
+    }
+
+    .sidebar-label-container .checkmark:after {
+        top: 3px;
+        left: 3.2px;
+        width: 7.1px;
+        height: 7px;
+    }
 }

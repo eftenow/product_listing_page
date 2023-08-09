@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.main-content{
+    flex: 3;
+}
+
 .content-container {
     display: flex;
 }

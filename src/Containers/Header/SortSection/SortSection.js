@@ -1,11 +1,11 @@
-import './Navigation.css'
+import './SortSection.css'
 import SortDropdown from '../../../Components/SortDropdown/SortDropdown';
 
-const Navigation = ({ onCategoryChange, selectedCategory, onSortOptionChange }) => {
+const SortSection = ({ onCategoryChange, selectedCategory, onSortOptionChange }) => {
     const categories = ['Sneakers', 'Flats', 'Skate', 'Heels'];
     
     return (
-        <nav className="sub-nav">
+        <section className="sort-section">
             <ul>
                 {categories.map(category => (
                     <li 
@@ -18,11 +18,11 @@ const Navigation = ({ onCategoryChange, selectedCategory, onSortOptionChange }) 
                 ))}
             </ul>
             <SortDropdown onSortOptionChange={onSortOptionChange} />
-        </nav>
+        </section>
     )
 }
 
 
 
 
-export default Navigation;
+export default SortSection;

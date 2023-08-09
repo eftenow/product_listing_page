@@ -1,23 +1,18 @@
 .sidebar {
-    width: 300px;
-    position: sticky;
-    left: 0;
-    top: 0;
-    height: 100%;
     transition: width 300ms;
     border-right: 1px solid #40454a78;
+    border-bottom: 1px solid #40454a78;
     align-items: start;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    flex: 1 1;
+    padding-bottom: 2rem;
+    border-bottom-right-radius: 16px;
 }
-
-
-
 
 .filters-title-container {
     border-bottom: 2px solid black;
-    margin: -1.5rem auto 2.6rem auto;
+    margin: 1.5rem auto 2.6rem auto;
     padding: 5px 10px;
     padding: 0.25rem 1.7rem;
 }
@@ -28,8 +23,8 @@
 
 .filter-items-wrapper.closed {
     display: none;
-  }
-  
-  .filter-items-wrapper.open {
+}
+
+.filter-items-wrapper.open {
     display: block;
-  }
+}

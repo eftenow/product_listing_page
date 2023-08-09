@@ -9,6 +9,7 @@
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 16vw;
+    height: 38vh;
     transition: 0.3s;
     border: 1px solid rgb(215, 213, 213);
 
@@ -121,3 +122,32 @@ del{
 .discounted-price{
     color: #fd0000 !important;
 }
+
+
+
+@media (max-width: 1200px) {
+    .product-card {
+        width: 18vw;
+    }
+}
+
+@media (max-width: 1040px) {
+    .product-card {
+        width: 20vw;
+    }
+}
+
+
+@media (max-width: 880px) {
+    .product-card {
+        width: 31vw;
+    }
+
+    section.product-section{
+        margin: 3% 0;
+    }
+}
+
+
+
+
