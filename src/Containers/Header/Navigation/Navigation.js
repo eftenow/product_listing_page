@@ -1,7 +1,7 @@
 import './Navigation.css'
 import SortDropdown from '../../../Components/SortDropdown/SortDropdown';
 
-const Navigation = ({ onCategoryChange, selectedCategory }) => {
+const Navigation = ({ onCategoryChange, selectedCategory, onSortOptionChange }) => {
     const categories = ['Sneakers', 'Flats', 'Skate', 'Heels'];
     
     return (
@@ -17,10 +17,11 @@ const Navigation = ({ onCategoryChange, selectedCategory }) => {
                     </li>
                 ))}
             </ul>
-            <SortDropdown />
+            <SortDropdown onSortOptionChange={onSortOptionChange} />
         </nav>
     )
 }
+
 
 
 

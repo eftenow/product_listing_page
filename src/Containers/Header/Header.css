@@ -17,6 +17,10 @@
     margin-left: 5rem;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
+
 .logo img {
     width: 100%;
 }

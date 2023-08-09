@@ -10,12 +10,13 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 16vw;
     transition: 0.3s;
+    border: 1px solid rgb(215, 213, 213);
+
 }
 
 
 .product-card:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgb(215, 213, 213);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 31%);
 }
 
 .product-card img {
@@ -38,7 +39,7 @@
 .card-price{
     display: flex;
     align-items: center;
-    margin: 1px 3px;
+    margin: 3px;
 }
 
 .price {
@@ -99,6 +100,7 @@ del{
     padding: 2px;
     font-size: 13px;
     font-weight: bold;
+    border-radius: 4px;
 }
 
 .card-details p{
