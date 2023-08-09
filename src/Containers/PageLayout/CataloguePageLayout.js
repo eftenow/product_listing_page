@@ -9,11 +9,11 @@ import SortSection from "../Header/SortSection/SortSection";
 const CataloguePageLayout = ({ data, selectedCategory, onCategoryChange }) => {
   const [sortOption, setSortOption] = useState('Alphabetical A-Z');
   const [filteredData, filterValues, setFilterValues] = useFilters(data, selectedCategory);
-  const [isSidebarVisible, setSidebarVisible] = useState(false);
+  const [isSideBarVisible, setSidebarVisible] = useState(false);
   const filteredAndSortedData = sortData(filteredData, sortOption);
 
   const toggleSidebar = () => {
-    setSidebarVisible(!isSidebarVisible);
+    setSidebarVisible(!isSideBarVisible);
   };
 
 
@@ -22,7 +22,7 @@ const CataloguePageLayout = ({ data, selectedCategory, onCategoryChange }) => {
       <Sidebar
         filterValues={filterValues}
         setFilterValues={setFilterValues}
-        isSidebarVisible={isSidebarVisible}
+        isSideBarVisible={isSideBarVisible}
         closeSidebar={toggleSidebar}
       />
 
@@ -32,6 +32,7 @@ const CataloguePageLayout = ({ data, selectedCategory, onCategoryChange }) => {
           selectedCategory={selectedCategory}
           onSortOptionChange={setSortOption}
           toggleSidebar={toggleSidebar}
+          sortOption={sortOption}
         />
         
         <Products data={filteredAndSortedData} />

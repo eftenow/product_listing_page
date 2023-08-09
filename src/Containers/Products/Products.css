@@ -5,7 +5,14 @@
     grid-auto-flow: column;
     margin: 3% 0 3% 1.2%;
     flex: 4.7;
+}
 
+.no-products-text {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.5em;
+    color: #40454a;
+    font-weight: bold;
 }
 
 .cards-container {

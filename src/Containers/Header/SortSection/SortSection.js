@@ -4,12 +4,12 @@ import CategoryDropdown from '../../../Components/CategoryDropdown/CategoryDropd
 import { BsFilterLeft } from 'react-icons/bs';
 
 
-const SortSection = ({ onCategoryChange, selectedCategory, onSortOptionChange, toggleSidebar }) => {
+const SortSection = ({ onCategoryChange, selectedCategory, onSortOptionChange, toggleSidebar, sortOption }) => {
     return (
         <>
             <section className="sort-section">
                 <CategoryDropdown onCategoryChange={onCategoryChange} selectedCategory={selectedCategory} />
-                <SortDropdown onSortOptionChange={onSortOptionChange} />
+                <SortDropdown onSortOptionChange={onSortOptionChange} selectedSortOption={sortOption} />
             </section>
 
             <button className="filter-btn" onClick={toggleSidebar}>
