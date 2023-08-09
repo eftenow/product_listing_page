@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import data from '../../assets/ProjectData/data.js';
 import './Searchbar.css';
+
+import { GrClose } from 'react-icons/gr';
+
 
 
 function Searchbar() {
@@ -19,14 +22,27 @@ function Searchbar() {
     }
   };
 
+  const clearSearch = () => {
+    setSearchText('');
+    setFilteredShoes([]);
+  };
+
   const handleSuggestionClick = (shoeName) => {
     setSearchText(shoeName);
-    setFilteredShoes([]); // Clear the suggestions once a suggestion is clicked
+    setFilteredShoes([]); 
   };
 
   return (
     <div className="search-container">
-      <input className="search-text" type="text" value={searchText} onChange={handleSearchChange} placeholder="Search..." />
+      <input 
+        className="search-text" 
+        type="text" 
+        value={searchText} 
+        onChange={handleSearchChange} 
+        placeholder="Search..." 
+      />
+
+      {searchText && <button className='close-btn' onClick={clearSearch}><GrClose /></button>}
       <div className="suggestions-box">
         {filteredShoes.map(shoe => (
           <div key={shoe.title} className="suggestion" onClick={() => handleSuggestionClick(shoe.title)}>
@@ -37,7 +53,7 @@ function Searchbar() {
       </div>
     </div>
   );
-  
 }
 
 export default Searchbar;
+
