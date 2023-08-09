@@ -1,5 +1,5 @@
 .sort-section {
-    background-color: #40454a;
+    background-color: #607385;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@
 }
 
 .selected-category{
-    background-color: #5679ab !important;
+    background-color: #40526a !important;
     color: white !important;
     font-weight: bold;
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./Containers/Header/Header";
 import  data  from './assets/ProjectData/data.js'; 
 import CataloguePageLayout from "./Containers/PageLayout/CataloguePageLayout";
+import Footer from "./Containers/Footer/Footer";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('Sneakers');
@@ -17,6 +18,7 @@ function App() {
         selectedCategory={selectedCategory} 
         onCategoryChange={handleCategoryChange}
       />
+      <Footer />
     </>
   );
 }
