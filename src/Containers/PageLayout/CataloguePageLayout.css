@@ -23,3 +23,8 @@ main{
 
 
 
+@media (max-width: 621px) {
+    main{
+        flex-direction: column;
+    }
+}

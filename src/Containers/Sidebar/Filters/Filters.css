@@ -39,6 +39,22 @@
     font-size: 14px;
 }
 
+.filter-btn {
+    display: none;
+    background-color: #5679ab;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 3% 0 0% 7%;
+    font-size: 21px;
+}
+
+.filter-btn:hover {
+    color: #fff;
+    cursor: pointer;
+    scale: 1.04;
+}
+
 
 .sidebar-label-container {
     display: block;
@@ -127,27 +143,77 @@
     .brand-filter-container,
     .rating-filter-container,
     .use-filter-container {
-        margin: 1%;
-        width: 95%;
+        margin: 2%;
+        width: 90%;
+    }
+}
+
+.sidebar-label-container {
+    padding-left: 20px;
+}
+
+.filter-items-wrapper * {
+    font-size: 13.5px;
+}
+
+.checkmark {
+    height: 15.5px;
+    width: 15.5px;
+}
+
+.sidebar-label-container .checkmark:after {
+    top: 3px;
+    left: 3.2px;
+    width: 7.1px;
+    height: 7px;
+}
+
+.close-filters-btn{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    border: none;
+    background: #2c2b2b;
+    padding: 1.8%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-filters-btn svg {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.close-filters-btn path {
+    stroke: #fff;
+}
+
+
+
+@media (max-width: 640px) {
+    .filter-btn {
+        display: block;
+        z-index: 12;
     }
 
-    .sidebar-label-container {
-        padding-left: 20px;
+    aside.sidebar {
+        display: none; 
+        width: 100%;
+        position: absolute; 
+        top: 84px;
+        left: 0;
+        z-index: 11; 
+        min-height: 55vh;
+        background: #fff;
     }
 
-    .filter-items-wrapper * {
-        font-size: 13.5px;
+    .sidebar.visible {
+        display: flex; 
     }
 
-    .checkmark {
-        height: 15.5px;
-        width: 15.5px;
+    .main-content {
+        width: 100%;
     }
 
-    .sidebar-label-container .checkmark:after {
-        top: 3px;
-        left: 3.2px;
-        width: 7.1px;
-        height: 7px;
-    }
+
 }

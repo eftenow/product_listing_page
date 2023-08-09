@@ -6,10 +6,10 @@ import Price from './Filters/Price/Price';
 import Rating from './Filters/Rating/Rating';
 import Use from './Filters/Use/Use';
 import './Sidebar.css'
-import { useState } from 'react';
+import { GrClose } from 'react-icons/gr';
 
 
-const Sidebar = ({ filterValues, setFilterValues }) => {
+const Sidebar = ({ filterValues, setFilterValues, isSidebarVisible, closeSidebar }) => {
     const handleFilterChange = (filterName, newValue) => {
 
         setFilterValues(prevState => {
@@ -30,8 +30,9 @@ const Sidebar = ({ filterValues, setFilterValues }) => {
 
     return (
         <>
-            <aside className="sidebar">
+            <aside className={`sidebar ${isSidebarVisible ? 'visible' : ''}`}>
                 <h1 className="filters-title-container">Filters</h1>
+                <button onClick={closeSidebar} className="close-filters-btn"><GrClose /></button>
                 <Gender filterValues={filterValues.gender} handleFilterChange={handleFilterChange} />
                 <Price filterValues={filterValues.price} handleFilterChange={handleFilterChange} />
                 <Colors filterValues={filterValues.color} handleFilterChange={handleFilterChange} />

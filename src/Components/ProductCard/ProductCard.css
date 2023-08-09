@@ -134,6 +134,7 @@ del{
 @media (max-width: 1040px) {
     .product-card {
         width: 20vw;
+        margin: 12px;
     }
 }
 
@@ -141,6 +142,7 @@ del{
 @media (max-width: 880px) {
     .product-card {
         width: 31vw;
+        margin: 10px;
     }
 
     section.product-section{
@@ -148,6 +150,39 @@ del{
     }
 }
 
+@media (max-width: 680px) {
+    .product-card {
+        width: 32vw;
+        margin: 8px 6px;
+    }
+
+    section.product-section{
+        margin: 3.5% 0;
+    }
+}
+
+@media (max-width: 590px) {
+    .product-card {
+        width: 42vw;
+        margin: 6px
+    }
+
+}
+
+@media (max-width: 460px) {
+    .product-card {
+        width: 60vw;
+        height: 41vh;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .product-card {
+        width: 75vw;
+    }
+
+}
 
 
 
