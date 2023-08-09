@@ -9,7 +9,7 @@ import './Sidebar.css'
 import { GrClose } from 'react-icons/gr';
 
 
-const Sidebar = ({ filterValues, setFilterValues, isSidebarVisible, closeSidebar }) => {
+const Sidebar = ({ filterValues, setFilterValues, isSideBarVisible, closeSidebar }) => {
     const handleFilterChange = (filterName, newValue) => {
 
         setFilterValues(prevState => {
@@ -30,7 +30,7 @@ const Sidebar = ({ filterValues, setFilterValues, isSidebarVisible, closeSidebar
 
     return (
         <>
-            <aside className={`sidebar ${isSidebarVisible ? 'visible' : ''}`}>
+            <aside className={`sidebar ${isSideBarVisible ? 'visible' : ''}`}>
                 <h1 className="filters-title-container">Filters</h1>
                 <button onClick={closeSidebar} className="close-filters-btn"><GrClose /></button>
                 <Gender filterValues={filterValues.gender} handleFilterChange={handleFilterChange} />

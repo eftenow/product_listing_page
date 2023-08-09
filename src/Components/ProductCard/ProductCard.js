@@ -37,9 +37,9 @@ const ProductCard = ({ data }) => {
                     <div className='price'>
                         {renderPrice()}
                     </div>
-                    <div className='purchase-item'>
+                    <button className='purchase-item'>
                         <BiShoppingBag className='purchase-item-icon' />
-                    </div>
+                    </button>
                     {renderDiscount()}
                 </section>
             </div>
