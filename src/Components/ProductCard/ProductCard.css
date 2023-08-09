@@ -185,4 +185,11 @@ del{
 }
 
 
+@media (max-width: 295px) {
+    .product-card {
+        width: 82vw;
+    }
+
+}
+
 

@@ -1,0 +1,17 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content button {
+    background: none;
+    border: none;
+    color: black;
+    padding: 13px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8em;
+    text-align: left; 
+    width: 100%;   
+    cursor: pointer;    
+}

@@ -1,25 +1,14 @@
 import './SortSection.css'
 import SortDropdown from '../../../Components/SortDropdown/SortDropdown';
+import CategoryDropdown from '../../../Components/CategoryDropdown/CategoryDropdown';
 import { BsFilterLeft } from 'react-icons/bs';
 
 
 const SortSection = ({ onCategoryChange, selectedCategory, onSortOptionChange, toggleSidebar }) => {
-    const categories = ['Sneakers', 'Flats', 'Skate', 'Heels'];
-
     return (
         <>
             <section className="sort-section">
-                <ul>
-                    {categories.map(category => (
-                        <li
-                            key={category}
-                            className={`nav-item ${selectedCategory === category ? 'selected-category' : ''}`}
-                            onClick={() => onCategoryChange(category)}
-                        >
-                            {category}
-                        </li>
-                    ))}
-                </ul>
+                <CategoryDropdown onCategoryChange={onCategoryChange} selectedCategory={selectedCategory} />
                 <SortDropdown onSortOptionChange={onSortOptionChange} />
             </section>
 

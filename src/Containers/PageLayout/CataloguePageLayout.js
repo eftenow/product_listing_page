@@ -33,6 +33,7 @@ const CataloguePageLayout = ({ data, selectedCategory, onCategoryChange }) => {
           onSortOptionChange={setSortOption}
           toggleSidebar={toggleSidebar}
         />
+        
         <Products data={filteredAndSortedData} />
       </div>
 

@@ -14,6 +14,10 @@
     letter-spacing: .055em;
 }
 
+.sort{
+    right: 0;
+}
+
 .sort-section ul {
     display: flex;
     align-items: center;
@@ -27,6 +31,12 @@
 
 .nav-item:hover {
     background-color: #4e4c4c; 
+}
+
+.selected-category{
+    background-color: #5679ab !important;
+    color: white !important;
+    font-weight: bold;
 }
 
 .nav-item.selected-category{

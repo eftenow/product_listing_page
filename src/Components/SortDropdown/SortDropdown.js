@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SortDropdown.css';
-import { FaSort } from 'react-icons/fa';
+import { FaSortAmountUp } from 'react-icons/fa';
+
 
 
 const SortDropdown = ({ onSortOptionChange }) => {
+    const [isOpen, setIsOpen] = useState(false);
+
     const handleSortChange = (option) => {
         onSortOptionChange(option);
+        setIsOpen(false); 
+    };
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
     };
 
     return (
         <div className="dropdown">
-            <button className="dropbtn">Sort <FaSort/></button>
-            <div className="dropdown-content">
+            <button className="dropbtn" onClick={toggleDropdown}><FaSortAmountUp /></button>
+            <div className={`sort dropdown-content ${isOpen ? 'open' : ''}`}>
                 <button onClick={() => handleSortChange('Alphabetical A-Z')}>Alphabetical A-Z</button>
                 <button onClick={() => handleSortChange('Alphabetical Z-A')}>Alphabetical Z-A</button>
                 <button onClick={() => handleSortChange('Price Ascending')}>Lowest to highest price</button>
@@ -21,6 +29,5 @@ const SortDropdown = ({ onSortOptionChange }) => {
         </div>
     );
 };
-
 
 export default SortDropdown;
