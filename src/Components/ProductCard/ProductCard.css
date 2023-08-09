@@ -9,7 +9,7 @@
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 16vw;
-    height: 38vh;
+    height: 40.5vh;
     transition: 0.3s;
     border: 1px solid rgb(215, 213, 213);
 
@@ -133,15 +133,18 @@ section.card-price > button {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .product-card {
-        width: 18vw;
+        width: 19vw;
+        height: 38vh;
     }
+
+
 }
 
 @media (max-width: 1040px) {
     .product-card {
-        width: 20vw;
+        width: 21vw;
         margin: 12px;
     }
 }
@@ -149,7 +152,7 @@ section.card-price > button {
 
 @media (max-width: 880px) {
     .product-card {
-        width: 31vw;
+        width: 32vw;
         margin: 10px;
     }
 
@@ -160,7 +163,7 @@ section.card-price > button {
 
 @media (max-width: 680px) {
     .product-card {
-        width: 32vw;
+        width: 32.5vw;
         margin: 8px 6px;
     }
 
@@ -181,6 +184,7 @@ section.card-price > button {
     .product-card {
         width: 60vw;
         height: 41vh;
+        margin: 3.3% 0;
     }
 
 }
