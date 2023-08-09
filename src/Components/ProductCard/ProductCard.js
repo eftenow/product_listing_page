@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { BiShoppingBag } from 'react-icons/bi';
-import { AiTwotoneStar } from 'react-icons/ai';
 import './ProductCard.css';
 import Notification from '../Notification/Notification';
+import Price from '../Price/Price';
+import Reviews from '../Reviews/Reviews';
+import PurchaseButton from '../PurchaseButton/PurchaseButton';
+import Discount from '../Discount/Discount';
 
 const ProductCard = ({ data }) => {
     const [notificationVisible, setNotificationVisible] = useState(false);
@@ -12,24 +14,6 @@ const ProductCard = ({ data }) => {
         setNotificationMessage(`${data.title} successfully added to the cart!`);
         setNotificationVisible(true);
     };
-    const renderPrice = () => {
-        return data.newPrice ? (
-            <>
-                <span className='discounted-price'>${data.newPrice}</span>
-                <del>${data.prevPrice}</del>
-            </>
-        ) : (
-            <span className='regularPrice'>${data.prevPrice}</span>
-        );
-    };
-
-    const renderDiscount = () => {
-        return data.newPrice ? (
-            <div className="discount">
-                <span>-{Math.round((1 - data.newPrice / data.prevPrice) * 100)}%</span>
-            </div>
-        ) : null;
-    };
 
     return (
         <>
@@ -38,19 +22,11 @@ const ProductCard = ({ data }) => {
             <div className='card-details'>
                 <p className="brand-name">{data.brand}</p>
                 <p className='card-title'>{data.title}</p>
-                <section className="card-reviews">
-                    <AiTwotoneStar className='rating-star' />
-                    <span className="total-reviews">{data.rating}</span>
-                </section>
+                <Reviews rating={data.rating} />
                 <section className='card-price'>
-                    <div className='price'>
-                        {renderPrice()}
-                    </div>
-                    <button className='purchase-item' onClick={handlePurchaseClick}>
-                        <BiShoppingBag className='purchase-item-icon' />
-                    </button>
-
-                    {renderDiscount()}
+                    <Price newPrice={data.newPrice} prevPrice={data.prevPrice} />
+                    <PurchaseButton handlePurchaseClick={handlePurchaseClick} />
+                    <Discount newPrice={data.newPrice} prevPrice={data.prevPrice} />
                 </section>
             </div>
         </article>
@@ -59,8 +35,5 @@ const ProductCard = ({ data }) => {
         )}</>
     );
 }
-
-
-
 
 export default ProductCard;
