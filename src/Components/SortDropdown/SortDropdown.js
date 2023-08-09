@@ -14,8 +14,9 @@ const SortDropdown = ({ onSortOptionChange }) => {
             <div className="dropdown-content">
                 <button onClick={() => handleSortChange('Alphabetical A-Z')}>Alphabetical A-Z</button>
                 <button onClick={() => handleSortChange('Alphabetical Z-A')}>Alphabetical Z-A</button>
-                <button onClick={() => handleSortChange('Price Ascending')}>Price Ascending</button>
-                <button onClick={() => handleSortChange('Price Descending')}>Price Descending</button>
+                <button onClick={() => handleSortChange('Price Ascending')}>Lowest to highest price</button>
+                <button onClick={() => handleSortChange('Price Descending')}>Highest to lowest price</button>
+                <button onClick={() => handleSortChange('Discount Descending')}>Highest discount</button>
             </div>
         </div>
     );
