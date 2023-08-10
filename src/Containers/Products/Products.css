@@ -80,3 +80,9 @@
         margin: 0.7rem 1.3rem;
     }
 }
+
+@media (max-width: 350px) {
+    .products-counter{
+        font-size: 12px;
+    }
+}

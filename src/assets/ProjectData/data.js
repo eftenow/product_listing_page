@@ -267,6 +267,32 @@ const data = [
   },
 
   {
+    img: "https://m.media-amazon.com/images/I/61fK2uLnSDL._AC_UY1000_.jpg",
+    title: "Prada Men's 42FG56",
+    rating: 3.6,
+    prevPrice: 245,
+    newPrice: null,
+    brand: "Prada",
+    color: "black",
+    category: "sneakers",
+    gender: "men",
+    use: "casual"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/61Dej-0ovaL._AC_UY780_.jpg",
+    title: "Prada Men's OQ42FG56",
+    rating: 3.4,
+    prevPrice: 210,
+    newPrice: null,
+    brand: "Prada",
+    color: "blue",
+    category: "sneakers",
+    gender: "men",
+    use: "casual"
+  },
+
+  {
     img: "https://m.media-amazon.com/images/I/815+0G4wwGL._AC_UY1000_.jpg",
     title: "Prada Men's Black",
     rating: 3.2,
@@ -285,6 +311,19 @@ const data = [
     rating: 2.5,
     prevPrice: 175,
     newPrice: 125,
+    brand: "Prada",
+    color: "white",
+    category: "flats",
+    gender: "women",
+    use: "formal"
+  },
+
+  {
+    img: "https://m.media-amazon.com/images/I/71MCqD1NkwL._AC_UY1000_.jpg",
+    title: "Prada red queen",
+    rating: 3.9,
+    prevPrice: 190,
+    newPrice: null,
     brand: "Prada",
     color: "white",
     category: "flats",
