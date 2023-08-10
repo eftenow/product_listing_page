@@ -23,7 +23,7 @@
 
 .product-card img {
     width: 100%;
-    height: auto;
+    height: 22.5vh;
     object-fit: contain;
 }
 
@@ -187,6 +187,10 @@ section.card-price > button {
         width: 60vw;
         margin: 3.3% 0;
     }
+
+    .product-card img {
+        height: 24.5vh;
+    }
     .card-details p,
     .total-reviews,
     .card-price > span{
@@ -199,6 +203,11 @@ section.card-price > button {
     .product-card {
         width: 75vw;
     }
+
+    .product-card img {
+        height: 27.5vh;
+    }
+    
 
 }
 
