@@ -1,6 +1,7 @@
 .product-card {
     position: relative;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     background: #fff;
@@ -8,11 +9,11 @@
     padding: 1px 4px;
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 15vw;
-    height: 41vh;
+    width: 20vw;
+    height: auto; 
+    max-width: 400px; 
     transition: 0.3s;
     border: 1px solid rgb(215, 213, 213);
-
 }
 
 
@@ -22,7 +23,7 @@
 
 .product-card img {
     width: 100%;
-    height: 28vh;
+    height: auto;
     object-fit: contain;
 }
 
@@ -30,7 +31,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 3%;
+    margin-top: 9%;
 }
 
 .card-title {
@@ -135,25 +137,25 @@ section.card-price > button {
 
 @media (max-width: 1280px) {
     .product-card {
-        width: 19vw;
-        height: 38vh;
+        width: 25vw;
     }
-
-
 }
 
 @media (max-width: 1040px) {
     .product-card {
-        width: 21vw;
-        margin: 12px;
+        width: 30vw;
     }
 }
 
 
 @media (max-width: 880px) {
     .product-card {
-        width: 32vw;
+        width: 31.5vw;
         margin: 10px;
+    }
+
+    .card-details{
+        padding: 6px 8px;
     }
 
     section.product-section{
@@ -174,7 +176,7 @@ section.card-price > button {
 
 @media (max-width: 590px) {
     .product-card {
-        width: 42vw;
+        width: 43vw;
         margin: 6px
     }
 
@@ -183,8 +185,12 @@ section.card-price > button {
 @media (max-width: 460px) {
     .product-card {
         width: 60vw;
-        height: 41vh;
         margin: 3.3% 0;
+    }
+    .card-details p,
+    .total-reviews,
+    .card-price > span{
+        font-size: 14px;
     }
 
 }
