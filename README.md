@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Shoe Paradise: A React Application for Shoe Enthusiasts</title>
-</head>
-
 <body>
-
-    <h1>Project Title</h1>
-    <p>Shoe Paradise: A React Application for Shoe Enthusiasts</p>
+    <h1>MyOutfit</h1>
+    <p>MyOutfit: A React Single Page Application for shoes, consisting of a catalogue of products (shoes)</p>
 
     <h2>Project Description</h2>
-    <p>Shoe Paradise is a responsive React web application designed to provide a seamless shopping experience for shoe
-        enthusiasts. The application features a product page that showcases different categories of shoes including
-        sneakers, flats, skate shoes, and heels. It offers a filter menu that allows users to narrow down their search
-        by various attributes such as color, price, brand, gender, and rating. Additionally, a sorting mechanism is
-        available to sort the products by price, discount, and other criteria. Each product listing includes essential
-        details such as price, discount (if applicable), and the name of the shoe. The application also includes a
-        search bar to quickly find specific products.</p>
+    <p>MyOutfit is a responsive React web application. The application features a product page that showcases different categories of shoes including
+    sneakers, flats, skate shoes, and heels. It offers a filter menu that allows users to narrow down their search
+    by various attributes such as color, price, brand, gender, and rating. Additionally, a sorting mechanism is
+    available to sort the products by price, discount, and other criteria. Each product listing includes essential
+    details such as price, discount (if applicable), and the name of the shoe. The application also includes a
+    search bar to quickly find specific products.</p>
 
     <h2>Features</h2>
     <ul>
@@ -37,8 +27,7 @@
     <h2>Installation and Setup</h2>
     <ol>
         <li><strong>Clone the Repository</strong>
-            <pre><code>git clone https://github.com/yourusername/shoe-paradise.git
-cd shoe-paradise</code></pre>
+            <pre><code>git clone https://github.com/eftenow/product_listing_page</code></pre>
         </li>
         <li><strong>Install Dependencies</strong>
             <pre><code>npm install</code></pre>
