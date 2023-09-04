@@ -32,5 +32,55 @@ The application will start running on [http://localhost:3000](http://localhost:3
 - **CSS**: Used for styling the application.
 
 ## Images
-![](src/assets/images/screenshots/home.png)
+Default home page, containing all products, non-filtered by anything, by default the selected category is 'Sneakers', so all the sneakers available are shown:
 
+![Home Page](src/assets/images/screenshots/home.png)
+
+
+- Filtration by multiple criterias:
+
+![Filtration](src/assets/images/screenshots/filtration.png)
+
+
+- Another filtration showcase:
+
+![Filtration](src/assets/images/screenshots/filtration2.png)
+
+
+- Selecting different category, while having filtrations applied:
+
+![Selecting categories](src/assets/images/screenshots/categories.png)
+
+- Selecting another category, while having different filtrations applied:
+
+![Selecting categories](src/assets/images/screenshots/categories2.png)
+
+
+- Sorting products by price:
+
+![Sorting](src/assets/images/screenshots/sorting.png)
+
+
+- Load more button - it only shows if the limit of 20 products is exceeded and there are more products to be shown:
+
+![Load more button](src/assets/images/screenshots/load-more.png)
+
+
+- Load less button - it only shows if the 'Load more button' was previously selected, it returns only the initial 20 products:
+
+![Load less button](src/assets/images/screenshots/load-less.png)
+
+
+- Search bar with suggestions:
+
+![Searchbar](src/assets/images/screenshots/search-bar.png)
+
+
+- Responsive design:
+
+<img src="src/assets/images/screenshots/responsive.png" alt="Responsiveness" width="420" height="640" />
+
+
+- Products filtration responsiveness:
+
+<img src="src/assets/images/screenshots/responsive2.png" alt="Responsiveness" width="420" height="640" />
