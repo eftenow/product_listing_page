@@ -2,7 +2,7 @@
 MyOutfit: A React Single Page Application for shoes, consisting of a catalogue of products (shoes).
 
 ## Project Description
-MyOutfit is a responsive React web application. The application features a product page that showcases different categories of shoes including sneakers, flats, skate shoes, and heels. It offers a filter menu that allows users to narrow down their search by various attributes such as color, price, brand, gender, and rating. Additionally, a sorting mechanism is available to sort the products by price, discount, and other criteria. Each product listing includes essential details such as price, discount (if applicable), and the name of the shoe. The application also includes a search bar to quickly find specific products.
+MyOutfit is a responsive React web application. It was made purely for educational purposes. The application features a simple product page that showcases different categories of shoes including sneakers, flats, skate shoes, and heels. It offers a filter menu that allows users to narrow down their search by various attributes such as color, price, brand, gender, and rating. Additionally, a sorting mechanism is available to sort the products by price, discount, and other criteria. Each product listing includes essential details such as price, discount (if applicable), and the name of the shoe. The application also includes a search bar to quickly find specific products.
 
 ## Features
 - **Product Categories**: Browse shoes by categories: sneakers, flats, skate, heels.
@@ -10,6 +10,8 @@ MyOutfit is a responsive React web application. The application features a produ
 - **Sorting Mechanism**: Sort products by price or discount.
 - **Search Bar**: Quickly find products using the search bar.
 - **Product Details**: View essential product details: price, discount (if applicable), and name.
+
+- **Responsive design**: Responsiveness ensuring seamless user experiences across a wide range of screen resolutions, from 280 to 2000+ pixels, providing versatility and accessibility.
 
 ## Live Demo
 The application is deployed and can be accessed [here](https://myoutfit-catalogue.web.app/).
